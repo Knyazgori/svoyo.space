@@ -1,7 +1,33 @@
 .headerBlock {
   display: flex;
-  margin: 0 auto;
-  width: 90%;
-  height: 122px;
-  background: yellow;
+  justify-content: space-between;
+  padding: 1rem 2.25rem 0 1.25rem;
+  height: 114px;
+  /* background: yellow; */
+}
+
+.logo { 
+  margin: 0;
+  line-height: 42px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;  
+  font-size: 64px;
+}
+
+.logo_descr {
+  margin: 0;
+  line-height: 24px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 700px) {
+  .headerBlock {
+    height: 70px;
+    /* width: 117.5rem; */
+
+  }
 }
