@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js --ignore ./sessions",
-    "seed": "node ./routes/seed.routes.js svoyo svoyo@svoyo svoyo"
+    "seed": "node ./routes/seed.routes.js sv sv@sv sv"
   },
   "keywords": [],
   "author": "",
