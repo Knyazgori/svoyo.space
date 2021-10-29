@@ -1,0 +1,114 @@
+li {  
+  list-style-type: none
+}
+
+.footer {
+  /* display: -webkit-flex; */
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  height: 114px;
+  /* padding: 1rem 2.25rem 0 1.25rem; */
+  /* background: yellow; */
+}
+/* 
+.footer_logo {
+  
+} */
+
+.footer .left .footer_logo .footer_descr {
+  width: 34rem;
+  height: 1.125rem;
+  color: #ff0000;
+  font-family: Arial;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1rem;
+  letter-spacing: normal;
+}
+
+.footer .left .footer_logo .mini_logo {
+  margin: 0;
+  width: 26.125rem;
+  height: 4rem;
+  color: #ff0000;
+  font-family: Arial;
+  font-size: 4.2rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 4rem;
+  letter-spacing: normal;
+}  
+.footer .left {
+  display: flex;
+  align-self: center;
+}
+
+.footer .right {
+  display: flex;
+  align-self: center;
+}
+
+.footer .right .links {
+  width: 7.125rem;
+  /* height: 7.75rem; */
+  color: #ff0000;
+  font-family: Arial;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1rem;
+  letter-spacing: normal;
+}
+
+.footer .right .email {
+  width: 16rem;
+  /* height: 7.75rem; */
+  color: #ff0000;
+  font-family: Arial;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1rem;
+  letter-spacing: normal;
+}
+
+.footer .right .people {
+  width: 45.5rem;
+  /* height: 7.75rem; */
+  color: #ff0000;
+  font-family: Arial;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1rem;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+
+
+
+
+/* 
+          <div className={styles}>
+            <li>inst</li>
+            <li>tg</li>
+            <li>сайт</li>
+            <li>почта</li>
+            <li>ютуб</li>
+          </div>
+          <div className={styles.email}>
+            <li>@make_russia_great_again</li>
+            <li>@svoyo.space</li>
+            <li>svoyo.space</li>
+            <li>svoyo.space@gmail.com</li>
+          </div>
+          <div className={styles.people}>
+            <li>Всему голова: Сергей Клещев</li>
+            <li>Зачинатели всея своё: Адель Галимова, Катя Курмышкина и Маша Козловцева</li>
+            <li>Художественных дел мастерицы: Адель, Катя и Маша</li>
+            <li>Компьютерных дел мaстера: Максим Антонов, Игорь Князев</li>
+            <li>Буквы: Arial и Arial Narrow</li>
+          </div>  */

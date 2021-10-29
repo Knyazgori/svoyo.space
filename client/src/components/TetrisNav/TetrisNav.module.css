@@ -1,34 +1,15 @@
-.headerBlock {
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 2.25rem 0 1.25rem;
-  height: 114px;
-  /* background: yellow; */
-}
-
-.logo { 
-  margin: 0;
-  line-height: 2.5rem;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;  
-  font-size: 4rem;
-}
-
-.logo_descr {
-  margin: 0;
-  line-height: 1.5rem;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.5rem;
-}
-
+/* 
 @media screen and (max-width: 700px) {
   .headerBlock {
     height: 70px;
-    /* width: 117.5rem; */
-
   }
+} */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
 }
