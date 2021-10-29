@@ -1,9 +1,3 @@
-/* 
-@media screen and (max-width: 700px) {
-  .headerBlock {
-    height: 70px;
-  }
-} */
 .wrapper {
   display: flex;
   flex-direction: column;
