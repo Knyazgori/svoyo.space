@@ -10,7 +10,7 @@ import { checkAdminAC } from '../../redux/actionCreators/adminAC';
 
 import Login from '../Login/Login';
 import Logout from '../Logout/Logout';
-import Home from '../Home/Home';
+import TetrisNav from '../TetrisNav/TetrisNav';
 
 
 function App() {
@@ -39,7 +39,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path='/'>
-          <Home />
+          <TetrisNav />
         </Route>
         <Route exact path="/login">
           <Login />
