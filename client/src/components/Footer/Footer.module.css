@@ -12,6 +12,12 @@ li {
   /* background: yellow; */
 }
 
+.footer .left .footer_logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .footer .left .footer_logo .footer_descr {
   width: 34rem;
   height: 1.125rem;
@@ -25,6 +31,7 @@ li {
 }
 
 .footer .left .footer_logo .mini_logo {
+  /* align-self: flex-end; */
   margin: 0;
   width: 26.125rem;
   height: 4rem;
