@@ -1,0 +1,63 @@
+.peopleBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 215px;
+  width: 1493px;
+  height: 442px;
+  /* background-color: #fff;   */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 353px;
+  height: 442px;
+}
+
+.card_text {
+  display: flex;
+  align-content: flex-end;
+  width: 353px;
+  height: 65px;
+  font-size: 2rem ;
+}
+
+.card_img {
+  width: 353px;
+  height: 351px;
+  background-color: rgb(233, 215, 215);
+}
+
+.big_card {
+  margin-top: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1855px;
+  height: 1000px;
+  /* background-color: white; */
+}
+
+.big_card_img {
+  width: 1855px;
+  height: 918px;
+  background-color: rgb(233, 215, 215);
+
+  /* background-color: black; */
+}
+
+.block_text {
+  display: flex;
+  height: 82.5px;
+
+}
+
+.big_card_text {
+  align-self: center;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+}

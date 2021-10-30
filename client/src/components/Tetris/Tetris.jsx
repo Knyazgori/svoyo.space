@@ -4,7 +4,7 @@ import FiguresBlock from '../FiguresBlock/FiguresBlock';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 
-import styles from '../TetrisNav/TetrisNav.module.css'
+import styles from './Tetris.module.css'
 
 
 

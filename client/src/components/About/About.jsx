@@ -4,6 +4,7 @@ import HeaderAbout from '../HeaderAbout/HeaderAbout'
 import Footer from '../Footer/Footer';
 
 import styles from '../About/About.module.css'
+import PhotoBlock from '../PhotoBlock/PhotoBlock';
 
 
 function About(props) {
@@ -12,8 +13,9 @@ function About(props) {
       <div className={styles.wrapper}>
         <div className={styles.content}>
           <HeaderAbout />
+          <PhotoBlock />
         </div>
-      <Footer />
+        <Footer />
       </div>
     </div>    
   );
