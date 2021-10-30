@@ -13,6 +13,8 @@ const adminMiddleware = require('./middleware/admin');
 const loginRouter = require('./routes/login.router');
 const logoutRouter = require('./routes/logout.router');
 const isAuthRouter = require('./routes/isAuth.router');
+const wordsRouter = require('./routes/words.router')
+const eventRouter = require('./routes/events.router')
 
 const PORT = process.env.PORT || 5000;
 
@@ -50,6 +52,8 @@ app.use(adminMiddleware);
 app.use('/signin', loginRouter);
 app.use('/logout', logoutRouter);
 app.use('/isauth', isAuthRouter);
+app.use('/words', wordsRouter)
+app.use('/event', eventRouter)
 
 
 app.listen(PORT, () => {
