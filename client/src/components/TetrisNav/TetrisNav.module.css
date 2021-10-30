@@ -1,14 +1,8 @@
-/* 
-@media screen and (max-width: 700px) {
-  .headerBlock {
-    height: 70px;
-  }
-} */
 .wrapper {
   display: flex;
   flex-direction: column;
-  height: 100%;
-}
+  height: 1455px;
+  }
 
 .content {
   flex: 1 0 auto;

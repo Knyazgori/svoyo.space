@@ -8,10 +8,10 @@ import { useEffect } from 'react';
 
 import { checkAdminAC } from '../../redux/actionCreators/adminAC';
 
-
 import Login from '../Login/Login';
 import Logout from '../Logout/Logout';
 import TetrisNav from '../TetrisNav/TetrisNav';
+import Home from '../Home/Home';
 
 
 function App() {
@@ -20,7 +20,6 @@ function App() {
   const admin = useSelector(state => state.isUserAuth)
   
   useEffect(() => {
-    console.log(admin);
     fetch('http://localhost:5000/isauth', {
       method: 'POST',
       credentials: 'include',
@@ -41,6 +40,9 @@ function App() {
       <Switch>
         <Route exact path='/'>
           <TetrisNav />
+        </Route>
+        <Route exact path='/home'>
+          <Home />
         </Route>
         <Route exact path="/login">
           <Login />
