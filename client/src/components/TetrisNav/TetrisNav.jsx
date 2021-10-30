@@ -13,10 +13,10 @@ function TetrisNav(props) {
   return (
     <div className="container">
       <div className={styles.wrapper}>
-      <div className={styles.content}>
-        <Header />
-        <FiguresBlock />
-      </div>
+        <div className={styles.content}>
+          <Header />
+        </div>
+      <FiguresBlock />
       <Footer />
       </div>
     </div>    
