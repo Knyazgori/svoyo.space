@@ -1,0 +1,38 @@
+.header_about {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3125rem 0 0 0;
+  height: 140px;
+  /* background: yellow; */
+}
+
+
+.logo_about { 
+  margin-top: -7px;
+  height: 4rem;
+}
+
+.title {
+  width: 847.32px;
+  height: 310.36px;
+}
+
+.title .logo_about_title {
+  margin: 0;
+  line-height: 73px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 4rem;
+}
+
+.title .logo_about_descr {
+  margin: 0;
+  line-height: 2rem;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
