@@ -12,6 +12,7 @@ import Login from '../Login/Login';
 import Logout from '../Logout/Logout';
 import TetrisNav from '../TetrisNav/TetrisNav';
 import Home from '../Home/Home';
+import About from '../About/About';
 
 
 function App() {
@@ -43,6 +44,9 @@ function App() {
         </Route>
         <Route exact path='/home'>
           <Home />
+        </Route>
+        <Route exact path='/about'>
+          <About />
         </Route>
         <Route exact path="/login">
           <Login />
