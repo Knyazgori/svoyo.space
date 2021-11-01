@@ -12,7 +12,7 @@ function SecondRow(props) {
         bottom: "-212px",
       }}
     >
-      <svg
+        <svg
         style={{ zIndex: "4" }}
         width="353"
         height="353"
@@ -79,6 +79,7 @@ function SecondRow(props) {
         />
       </svg>
 
+      <a style={{ width: '543px', height: '353px'}} href="https://www.instagram.com/svoyo.space/" target="_blank" rel="noreferrer">
       <svg
         style={{ zIndex: "1" }}
         width="543"
@@ -148,7 +149,9 @@ function SecondRow(props) {
           fill="white"
         />
       </svg>
+      </a>
 
+      <a style={{ width: '538px', height: '353px'}} href="https://t.me/make_russia_great_again" target="_blank" rel="noreferrer">
       <svg
         style={{ zIndex: "1" }}
         width="538"
@@ -222,6 +225,7 @@ function SecondRow(props) {
           fill="#0000FF"
         />
       </svg>
+      </a>
     </div>
   );
 }
