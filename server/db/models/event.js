@@ -9,8 +9,13 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate(models) {
+    static associate({ Visitor }) {
       // define association here
+      Event.belongsToMany(Visitor, {
+        through: "EventVisitors",
+        foreignKey: "event",
+        otherKey: "visitor"
+      })
     }
   };
   Event.init({
@@ -21,7 +26,7 @@ module.exports = (sequelize, DataTypes) => {
     description: {
       type: DataTypes.STRING,
       allowNull: false
-    }, 
+    },
     date: {
       type: DataTypes.STRING,
       allowNull: false

@@ -1,4 +1,5 @@
 import React from 'react';
+import GameField from '../GameField/GameField.jsx';
 
 import styles from './FiguresBlock.module.css'
 
@@ -11,6 +12,7 @@ function FiguresBlock(props) {
 
   return (
     <div className={styles.main_figures_block}>
+      <GameField />
       <div style={{ display: 'flex', fleDirection: 'row', justifyContent: 'space-between', width: '731px', position: 'absolute', bottom: '0' }}>
         <img style={{ alignSelf: 'flex-end', zIndex: '3' }} src="../../../fig/3.svg" alt="image format png" />
         <img style={{ zIndex: '2', position: 'absolute', right: '-1px', top: '-189px' }} src="../../../fig/2.svg" alt="image format png" />
