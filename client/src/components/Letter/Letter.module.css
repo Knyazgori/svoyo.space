@@ -1,0 +1,9 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 1541px;
+  }
+
+.content {
+  flex: 1 0 auto;
+}

@@ -1,0 +1,31 @@
+.header_letter {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3125rem 0 0 0;
+  height: 311.5px;
+  /* background: yellow; */
+}
+
+.logo_letter {
+  margin-top: -7px;
+  height: 4rem;
+}
+
+.header_descr {
+  width: 854px;
+  height: 82px;
+}
+
+.header_descr .logo_letter_title {
+  width: 664.45px;
+  height: 68.59px;
+}
+
+.header_descr .logo_letter_descr {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+
+}
+
