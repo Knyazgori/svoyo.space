@@ -16,6 +16,7 @@ module.exports = (sequelize, DataTypes) => {
   EventVisitor.init({
     event: {
       type: DataTypes.INTEGER,
+      allowNull: false,
       references: {
         model: 'Event',
         key: 'id'
@@ -23,6 +24,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     visitor: {
       type: DataTypes.INTEGER,
+      allowNull: false,
       references: {
         model: 'Visitor',
         key: 'id'

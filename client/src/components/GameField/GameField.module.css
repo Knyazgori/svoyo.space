@@ -6,7 +6,7 @@
   top: 0px;
   /* border: 1px solid red; */
   z-index: 1;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 
@@ -17,7 +17,7 @@
   height: 544px;
   width: 544px;
   z-index: 1;
-  transition: top 2s, transform 1s;
+  transition: top 2s, transform 1s, left 1s;
   /* border: 1px solid rgb(0, 47, 255); */
 
   transform: rotate(0deg);
@@ -55,6 +55,15 @@
   transform: rotate(270deg);
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
+}
+
+.hidden_block {
+  height: 172px;
+  width: 1500px;
+  bottom: 0px;
+  border: 1px solid blue;
+  background-color: blue;
+  z-index: 1;
 }
 
 
