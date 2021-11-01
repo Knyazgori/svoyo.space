@@ -1,0 +1,19 @@
+.letter_place {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 70px;
+  width: 1728px;
+  height: 872px;
+}
+
+.letter_place .letter {
+  align-self: center;
+}
+
+
+.letter_place .save {
+  align-self: flex-end;
+  cursor: pointer;
+}
