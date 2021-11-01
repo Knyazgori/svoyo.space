@@ -16,15 +16,16 @@
   height: 544px;
   width: 544px;
   z-index: 1;
+  transition: top 2s, transform 1s;
   /* border: 1px solid rgb(0, 47, 255); */
 
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
 
-  animation-duration: 20s;
+  /* animation-duration: 20s;
   animation-name: fall_down;
-  animation-iteration-count: 1;
+  animation-iteration-count: 1; */
 }
 
 .svg_falling{

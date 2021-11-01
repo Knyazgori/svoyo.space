@@ -1,9 +1,9 @@
 import React from 'react';
 import style from './GameField.module.css'
 
-function FallindBlock({ position, cubeStyle }) {
+function FallindBlock({ position, cubeStyle, top }) {
   return (
-    <div className={cubeStyle} style={{ left: `${position}px` }}>
+    <div className={cubeStyle} style={{ left: `${position}px`, top: `${top}px` }}>
       <svg className={style.svg_falling} width="543" height="352" viewBox="0 0 543 352" fill="none" xmlns="http://www.w3.org/2000/svg">
         <mask id="path-1-inside-1_232:2186" fill="white">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M542.319 0L0.704102 0L0.704102 162.667L190.136 162.667L190.136 352L352.887 352L352.887 162.667L542.319 162.667V0Z" />

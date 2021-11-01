@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Refresh(props) {
+function Refresh({ handlerRefresh }) {
   return (
-    <svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg onClick={handlerRefresh} width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="80.665" y="80.6651" width="79.3301" height="79.3301" transform="rotate(-180 80.665 80.6651)" fill="#D2D2D2" stroke="#FF0000" stroke-width="2.67" />
       <path d="M53.2786 26.6444L67.205 33.3667L68.0539 17.926" stroke="#FF0000" stroke-width="2.67" stroke-linecap="square" />
       <mask id="path-3-inside-1_236:367" fill="white">
