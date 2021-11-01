@@ -35,6 +35,10 @@
   color: #FF0000;
 }
 
+.letter_place .name:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
 .letter_place .name::-webkit-input-placeholder {
   color: #D2D2D2;
   font-family: Arial;
@@ -154,12 +158,11 @@
 
 .letter_place .third {
   position: absolute;
-  transform: rotate(-2.35deg);
   width: 173.79px;
   height: 41.38px;
   border: none;
-  left: 295px;
-  top: 633px;
+  left: 1245px;
+  top: 739px;
   outline: none;
   font-family: Arial;
   font-style: normal;

@@ -66,7 +66,7 @@ function LetterInput(props) {
         <input className={styles.city} placeholder='город' type="text" />
         <input className={styles.first} type="text" />
         <input className={styles.second} type="text" />
-        <input className={styles.third} type="text" />  
+        <input className={styles.third} type="text" />
 
 
         <svg width="238" height="59" viewBox="0 0 238 59" fill="none" xmlns="http://www.w3.org/2000/svg">
