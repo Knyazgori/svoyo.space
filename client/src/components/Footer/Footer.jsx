@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import styles from './Footer.module.css'
 
@@ -9,21 +10,21 @@ function Footer(props) {
           <div className={styles.left}>
             <div className={styles.footer_logo}>
               <p className={styles.footer_descr}>своё — это проект про русскую душу</p>
-              <p className={styles.mini_logo}>ё</p>
+              <Link to="#" className={styles.links}><p className={styles.mini_logo}>ё</p></Link>
             </div>
           </div>
           <div className={styles.right}>
             <div className={styles.links}>
-              <li>inst</li>
               <li>tg</li>
+              <li>inst</li>
               <li>сайт</li>
               <li>почта</li>
               <li>ютуб</li>
             </div>
             <div className={styles.email}>
-              <li>@make_russia_great_again</li>
-              <li>@svoyo.space</li>
-              <li>svoyo.space</li>
+              <a target="_blank" rel="noreferrer" className={styles.links} href="https://t.me/make_russia_great_again"><li>@make_russia_great_again</li></a>
+              <a target="_blank" rel="noreferrer" className={styles.links} href="https://www.instagram.com/svoyo.space/"><li>@svoyo.space</li></a>
+              <a target="_blank" rel="noreferrer" className={styles.links} href="https://svoyo.space/"><li>svoyo.space</li></a>
               <li>svoyo.space@gmail.com</li>
             </div>
             <div className={styles.people}>
