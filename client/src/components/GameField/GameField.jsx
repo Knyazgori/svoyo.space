@@ -54,7 +54,7 @@ function GameField(props) {
 
   useEffect(() => {
     setTimeout(() => {
-      if (top < 520) // запуск блока
+      if (top < 520) // запуск блока вниз
         setTimeout(() => {
           setTop(top + 168)
         }, 2000)
