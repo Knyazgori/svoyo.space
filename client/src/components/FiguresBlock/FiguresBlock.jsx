@@ -1,4 +1,7 @@
-import React from "react";
+
+import React from 'react';
+import GameField from '../GameField/GameField.jsx';
+
 
 import styles from "./FiguresBlock.module.css";
 import FirstRow from "./FirstRow/FirstRow";
@@ -12,9 +15,11 @@ function FiguresBlock(props) {
 
   return (
     <div className={styles.main_figures_block}>
+
       <FirstRow />
       <SecondRow />
       <ThirdRow />
+      <GameField />
     </div>
   );
 }
