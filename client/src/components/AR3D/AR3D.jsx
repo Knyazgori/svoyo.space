@@ -9,11 +9,13 @@ function AR3D(props) {
         <div className={styles.ar_place_descr}>
           <p>ЗЕМЛЯ КРУГЛАЯ — НА КРАЯХ<br />ВСТРЕТИМСЯ, КРУТИ-ВЕРТИ!</p>
         </div>
-        <ReactThreeFbxViewer cameraPosition={{
-          x: 20,
-          y: 100, // дальность
-          z: 20
-        }} url='./AR/russia.fbx' backgroundColor='#dcdcdc' near={3} far={1000} />
+        <div className={styles.ar_place_model}>
+          <ReactThreeFbxViewer cameraPosition={{
+            x: 20,
+            y: 100, // дальность
+            z: 20
+          }} url='./AR/russia.fbx' backgroundColor='#dcdcdc' near={3} far={1000} />
+        </div>
       </div>
     </>
   );
