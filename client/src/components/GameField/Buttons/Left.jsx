@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Left({ moveLeft, rotateLeftHandler }) {
+function Left({ moveLeft }) {
   return (
     <svg onClick={moveLeft} width="83" height="83" viewBox="0 0 83 83" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="1.335" y="1.33561" width="79.4599" height="79.4599" fill="#D2D2D2" stroke="white" stroke-width="2.67" />

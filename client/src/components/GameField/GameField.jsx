@@ -11,15 +11,23 @@ function GameField(props) {
   const [refresh, setRefresh] = useState(0) // переменная обновления игры
 
 
-  const moveRight = () => { // смещение вправо
-    if (position < 920) { 
+  const moveRight = (positionX, positionY) => { // смещение вправо
+    if (position < 920) {
       setPosition(position + 190)
     }
   }
 
   const moveLeft = () => { // смещение влево
     if (position != 160) {
-      setPosition(position - 190)
+      if (position === 920 && top < 313) {
+        setPosition(position - 190)
+      } else if (position === 730 && top < 123) {
+        setPosition(position - 190)
+      } else if (position === 540 && top < -67) {
+        setPosition(position - 190)
+      } else if (position === 350 && top < -67) {
+        setPosition(position - 190)
+      }
     }
   }
 
