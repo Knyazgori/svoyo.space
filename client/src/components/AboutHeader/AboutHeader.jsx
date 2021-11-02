@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './HeaderAbout.module.css'
+import styles from './AboutHeader.module.css'
 
 function LogoBlock(props) {
   return (

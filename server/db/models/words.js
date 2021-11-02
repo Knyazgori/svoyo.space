@@ -15,29 +15,33 @@ module.exports = (sequelize, DataTypes) => {
   };
   Words.init({
     first: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     second: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     third: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     user: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     nickname: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     city: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
-    }
+    },
+    country: {
+      type: DataTypes.TEXT,
+      allowNull: false
+    },
   }, {
     sequelize,
     modelName: 'Words',
