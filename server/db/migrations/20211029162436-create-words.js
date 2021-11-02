@@ -9,27 +9,31 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       first: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
         allowNull: false
       },
       second: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
         allowNull: false
       },
       third: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
         allowNull: false
       },
       user: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
         allowNull: false
       },
       nickname: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
         allowNull: false
       },
       city: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
+        allowNull: false
+      },
+      country: {
+        type: Sequelize.TEXT,
         allowNull: false
       },
       createdAt: {

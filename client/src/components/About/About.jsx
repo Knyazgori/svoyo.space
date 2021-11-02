@@ -1,6 +1,6 @@
 import React from 'react';
 
-import HeaderAbout from '../HeaderAbout/HeaderAbout'
+import AboutHeader from '../AboutHeader/AboutHeader'
 import Footer from '../Footer/Footer';
 
 import styles from '../About/About.module.css'
@@ -12,7 +12,7 @@ function About(props) {
     <div className="container">
       <div className={styles.wrapper}>
         <div className={styles.content}>
-          <HeaderAbout />
+          <AboutHeader />
           <PhotoBlock />
         </div>
         <Footer />
