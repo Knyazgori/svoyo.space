@@ -14,6 +14,7 @@ import Tetris from '../Tetris/Tetris';
 import Home from '../Home/Home';
 import About from '../About/About';
 import Letter from '../Letter/Letter';
+import Passport from '../Passport/Passport';
 
 
 function App() {
@@ -51,6 +52,9 @@ function App() {
         </Route>
         <Route exact path='/russia'>
           <Letter />
+        </Route>
+        <Route exact path='/passport'>
+          <Passport />
         </Route>
         <Route exact path="/login">
           <Login />

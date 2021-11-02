@@ -1,3 +1,18 @@
+.letter_place {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 70px;
+  width: 1728px;
+  height: 872px;
+  color: #ff0000;
+}
+
+.letter_place .letter {
+  align-self: center;
+}
+
 .letter_place .save {
   align-self: flex-end;
   cursor: pointer;
@@ -17,7 +32,7 @@
   font-weight: normal;
   font-size: 2rem;
   background-color: transparent;
-  color: #FF0000;
+  color: #ff0000;
 }
 
 .letter_place .name:focus::-webkit-input-placeholder {
@@ -25,12 +40,12 @@
 }
 
 .letter_place .name::-webkit-input-placeholder {
-  color: #D2D2D2;
+  color: #d2d2d2;
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
   font-size: 2rem;
- } 
+}
 
 .letter_place .nickname {
   position: absolute;
@@ -46,17 +61,17 @@
   font-weight: normal;
   font-size: 2rem;
   background-color: transparent;
-  color: #FF0000;
+  color: #ff0000;
 }
 
 .letter_place .nickname::-webkit-input-placeholder {
-  color: #D2D2D2;
+  color: #d2d2d2;
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
   font-size: 2rem;
   background-color: transparent;
- } 
+}
 
 .letter_place .country {
   position: absolute;
@@ -72,16 +87,16 @@
   font-weight: normal;
   font-size: 2rem;
   background-color: transparent;
-  color: #FF0000;
+  color: #ff0000;
 }
 
 .letter_place .country::-webkit-input-placeholder {
-  color: #D2D2D2;
+  color: #d2d2d2;
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
   font-size: 2rem;
- } 
+}
 
 .letter_place .city {
   position: absolute;
@@ -97,19 +112,18 @@
   font-weight: normal;
   font-size: 2rem;
   background-color: transparent;
-  color: #FF0000;
+  color: #ff0000;
 }
 
 .letter_place .city::-webkit-input-placeholder {
-  color: #D2D2D2;
+  color: #d2d2d2;
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
   font-size: 2rem;
- } 
+}
 
-
- .letter_place .first {
+.letter_place .first {
   position: absolute;
   width: 173.79px;
   height: 41.38px;
@@ -122,7 +136,7 @@
   font-weight: normal;
   font-size: 2rem;
   background-color: transparent;
-  color: #FF0000;
+  color: #ff0000;
 }
 
 .letter_place .second {
@@ -138,7 +152,7 @@
   font-weight: normal;
   font-size: 2rem;
   background-color: transparent;
-  color: #FF0000;
+  color: #ff0000;
 }
 
 .letter_place .third {
@@ -154,5 +168,5 @@
   font-weight: normal;
   font-size: 2rem;
   background-color: transparent;
-  color: #FF0000;
+  color: #ff0000;
 }
