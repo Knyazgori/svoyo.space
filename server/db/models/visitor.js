@@ -13,8 +13,8 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       Visitor.belongsToMany(Event, {
         through: EventVisitor,
-        otherKey: "event",
-        foreignKey: "visitor"
+        foreignKey: "visitor",
+        otherKey: "event"
       })
     }
   };
