@@ -21,7 +21,7 @@
 
 .ar_place_model {
   width: 100%;
-  align-self: flex-start;
+  align-self: center;
   height: 62.625rem;
-  background-color: #bab8b8;
+  /* background-color: #bab8b8; */
 }
