@@ -1,0 +1,27 @@
+.ar_place {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 1055px;
+}
+
+.ar_place_descr {
+  align-self: flex-start;
+  width: 18.563rem;
+  height: 3.313rem;
+  color: #ff0000;
+  font-family: Arial;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+}
+
+.ar_place_model {
+  width: 100%;
+  align-self: flex-start;
+  height: 62.625rem;
+  background-color: #bab8b8;
+}
