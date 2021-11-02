@@ -1,4 +1,4 @@
-import React from 'react';
+import ReactThreeFbxViewer from 'react-three-fbx-viewer'
 
 import styles from './AR3D.module.css'
 
@@ -9,7 +9,11 @@ function AR3D(props) {
         <div className={styles.ar_place_descr}>
           <p>ЗЕМЛЯ КРУГЛАЯ — НА КРАЯХ<br />ВСТРЕТИМСЯ, КРУТИ-ВЕРТИ!</p>
         </div>
-        <div className={styles.ar_place_model}></div>
+        <ReactThreeFbxViewer cameraPosition={{
+          x: 20,
+          y: 100, // дальность
+          z: 20
+        }} url='./AR/russia.fbx' backgroundColor='#dcdcdc' near={3} far={1000} />
       </div>
     </>
   );
