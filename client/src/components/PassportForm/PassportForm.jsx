@@ -1,10 +1,40 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 import styles from './PassportForm.module.css'
 
 function PassportForm(props) {
+
+  const eventName = useRef()
+  const surname = useRef()
+  const name = useRef()
+  const patronymic = useRef()
+  const gender = useRef()
+  const birth = useRef()
+  const born = useRef()
+  const phone = useRef()
+  const hours = useRef()
+  const minutes = useRef()
+  const date = useRef()
+
+
+
+  const handlerSubmit = async (event) => {
+    event.preventDefault();
+
+    const response = fetch('http://localhost:5000/event/add_visitor', {
+      method: 'POST',
+      credentials: 'include',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify({ name: name.current.value, surname: surname.current.value, patronymic: patronymic.current.value, birth: birth.current.value, event: eventName.current.innerText, phone: phone.current.value, }),
+    })
+    const data = await response
+    console.log(data);
+  }
+
   return (
-    <form className={styles.form_block}>
+    <form className={styles.form_block} onSubmit={handlerSubmit}>
       <svg className={styles.form_block_passport} width="1490" height="1031" viewBox="0 0 1490 1031" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="1" y="1" width="1487.06" height="1028.15" rx="19.0418" fill="white" stroke="#FF0000" stroke-width="2" />
         <rect x="73.0527" y="180.041" width="406.291" height="543.138" fill="white" stroke="#FF0000" stroke-width="2" />
@@ -204,21 +234,21 @@ function PassportForm(props) {
         </defs>
       </svg>
 
-      <input name='surname' type="text" />
-      <input name='name' type="text" />
-      <input name='patronymic' type="text" />
-      <input name='' type="text" />
-      <input type="text" />
-      <input type="text" />
-
+      <input name='surname' ref={surname} className={styles.surname} defaultValue='Igor' type="text" />
+      <input name='name' ref={name} className={styles.name} defaultValue='Igor' type="text" />
+      <input name='patronymic' ref={patronymic} className={styles.patronymic} defaultValue='Igor' type="text" />
+      <input name='gender' ref={gender} className={styles.gender} defaultValue='Igor' type="text" />
+      <input name='birth' ref={birth} className={styles.birth} defaultValue='22122001' type="text" />
+      <input name='born' ref={born} className={styles.born} defaultValue='Igor' type="text" />
+      <input name='phone' ref={phone} className={styles.phone} defaultValue='890232030' type="text" />
 
       <div className={styles.form_block_date}>
-        <p className={styles.form_block_date_p1}>12</p>
-        <p className={styles.form_block_date_p2}>30</p>
-        <p className={styles.form_block_date_p3}>010122</p>
+        <p ref={hours} className={styles.form_block_date_p1}>12</p>
+        <p ref={minutes} className={styles.form_block_date_p2}>30</p>
+        <p ref={date} className={styles.form_block_date_p3}>010122</p>
       </div>
       <div className={styles.form_block_info}>
-        <p className={styles.form_block_info_p1}>СВОЯ_ТУСОВКА_12:30_01/01/22_НАБЕРЕЖНАЯ_КАНАЛА_ГРИБОЕДОВА_123_ЕЩЕ_ТУ<br />Т_БУДУТ_ПРИКОЛЫ_НО_ПОКА_ОБОЙДЕТЕСЬ_БЕЗ_ПРИКОЛО<br />В_НИКАКИХ_ПРИКОЛОВ_ЗАПРЕЩАЮ_ПРИКОЛЫ</p>
+        <p ref={eventName} className={styles.form_block_info_p1}>СВОЯ_ТУСОВКА_12:30_01/01/22_НАБЕРЕЖНАЯ_КАНАЛА_ГРИБОЕДОВА_123_ЕЩЕ_ТУ<br />Т_БУДУТ_ПРИКОЛЫ_НО_ПОКА_ОБОЙДЕТЕСЬ_БЕЗ_ПРИКОЛО<br />В_НИКАКИХ_ПРИКОЛОВ_ЗАПРЕЩАЮ_ПРИКОЛЫ</p>
       </div>
       <button>
         <svg className={styles.form_block_save} width="250" height="59" viewBox="0 0 250 59" fill="none" xmlns="http://www.w3.org/2000/svg">
