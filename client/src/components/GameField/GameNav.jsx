@@ -8,8 +8,8 @@ function GameNav({ moveRight, moveLeft, rotateRightHandler, rotateLeftHandler, h
   return (
     <div>
       <Left moveLeft={moveLeft} rotateLeftHandler={rotateLeftHandler} />
-      <Down />
-      <Right moveRight={moveRight}  rotateRightHandler={rotateRightHandler} />
+      <Down rotateRightHandler={rotateRightHandler}/>
+      <Right moveRight={moveRight} />
       <Refresh handlerRefresh={handlerRefresh}/>
     </div>
   );
