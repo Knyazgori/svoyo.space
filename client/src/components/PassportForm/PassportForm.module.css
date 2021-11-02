@@ -38,3 +38,116 @@
   top: 1193px;
   font-size: 2rem;
 }
+
+.surname {
+  position: absolute;
+  width: 556.79px;
+  height: 41.38px;
+  border: none;
+  left: 913px;
+  top: 555px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
+
+.name {
+  position: absolute;
+  width: 622.79px;
+  height: 41.38px;
+  border: none;
+  left: 848px;
+  top: 638px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+} 
+
+.patronymic {
+  position: absolute;
+  width: 574.79px;
+  height: 41.38px;
+  border: none;
+  left: 909px;
+  top: 722px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
+
+
+.gender {
+  position: absolute;
+  width: 288.79px;
+  height: 41.38px;
+  border: none;
+  left: 844px;
+  top: 812px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
+
+.birth {
+  position: absolute;
+  width: 201.79px;
+  height: 41.38px;
+  border: none;
+  left: 1295px;
+  top: 812px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
+
+.born {
+  position: absolute;
+  width: 495.79px;
+  height: 41.38px;
+  border: none;
+  left: 1002px;
+  top: 891px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
+
+.phone {
+  position: absolute;
+  width: 595.79px;
+  height: 41.38px;
+  border: none;
+  left: 902px;
+  top: 975px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}  
