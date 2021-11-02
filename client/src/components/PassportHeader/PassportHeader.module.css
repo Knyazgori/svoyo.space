@@ -1,0 +1,39 @@
+.passport_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3125rem 0 0 0;
+  height: 245px;
+}
+
+.passport_header .passport_logo {
+  margin-top: -7px;
+  height: 4rem;
+}
+
+.passport_header .passport_header_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 790px;
+  height: 229.31px;
+  margin-right: 65px;
+}
+
+.passport_header .passport_header_block .passport_header_block_title {
+  align-self: flex-start;
+  margin: 0;
+  line-height: 73px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.25rem;
+}
+
+.passport_header .passport_header_block .passport_header_block_descr_p1 {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.9rem;
+} 
+
+

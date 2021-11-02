@@ -1,8 +1,8 @@
 import React from 'react';
 
-import styles from './HeaderLetter.module.css'
+import styles from './LetterHeader.module.css'
 
-function HeaderLetter(props) {
+function LetterHeader(props) {
   return (
     <div className={styles.header_letter}>
       <a href="/"><img src='../../../logo/svoyo.svg' className={styles.logo_letter} /></a>
@@ -33,4 +33,4 @@ function HeaderLetter(props) {
   );
 }
 
-export default HeaderLetter;
+export default LetterHeader;
