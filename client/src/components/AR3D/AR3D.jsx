@@ -11,9 +11,9 @@ function AR3D(props) {
         </div>
         <ReactThreeFbxViewer cameraPosition={{
           x: 20,
-          y: 50, // дальность
+          y: 100, // дальность
           z: 20
-        }} url='./AR/russia_test.fbx' backgroundColor='#aebaa9' near={3} far={1000} />
+        }} url='./AR/russia.fbx' backgroundColor='#dcdcdc' near={3} far={1000} />
       </div>
     </>
   );
