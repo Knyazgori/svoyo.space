@@ -5,9 +5,9 @@ import GameNav from './GameNav';
 
 function GameField(props) {
 
-  const [position, setPosition] = useState(940) // горизонтальная позиция
+  const [position, setPosition] = useState(920) // горизонтальная позиция
   const [cubeStyle, setCubeStyle] = useState(style.falling_block) // переменная стилей для управления поворотом блока
-  const [top, setTop] = useState(-150) // начальное состояние вертикальной позиции
+  const [top, setTop] = useState(503) // начальное состояние вертикальной позиции
   const [refresh, setRefresh] = useState(0) // переменная обновления игры
 
 
@@ -49,44 +49,42 @@ function GameField(props) {
 
   }
 
-  useEffect(() => { // стартовый запуск блка
-    if (position < 940) {
-      console.log(position);
-      if (top < 350) // проверка финишной позиции. Ограничение финишной позиции 
-      setTimeout(() => {
-        setTop(top + 168) // шаг блока вниз
-      }, 2000)
-    } else {
-      if (top < 520) // проверка финишной позиции. Ограничение финишной позиции 
-      setTimeout(() => {
-        setTop(top + 168) // шаг блока вниз
-      }, 2000)
-    }
-  }, [top, position])
-
-  // useEffect(() => {
-  //   if (position < 940) { // проверка горизонтальной позиции
-  //     if (top <= 400) // проверка финишной позиции
+  // useEffect(() => { // стартовый запуск блока
+  //   console.log(position);
+  //   if (position < 900) {
+  //     if (top < 350) // проверка финишной позиции. Ограничение финишной позиции 
   //     setTimeout(() => {
-  //       setTop(top + 168)
+  //       setTop(top + 168) // шаг блока вниз
+  //     }, 2000)
+  //   } else if (position < 765) {
+  //     if (top < 182) // проверка финишной позиции. Ограничение финишной позиции 
+  //     console.log(position,'----------------------', top);
+  //     setTimeout(() => {
+  //       setTop(top + 168) // шаг блока вниз
+  //     }, 2000)
+  //   } else {
+  //     if (top < 500) // проверка финишной позиции. Ограничение финишной позиции 
+  //     setTimeout(() => {
+  //       setTop(top + 168) // шаг блока вниз
   //     }, 2000)
   //   }
-  // }, [position])
+  // }, [top, position])
 
-  useEffect(() => { // перезапуск блока
-    setTimeout(() => {
-      if (top < 520) // запуск блока вниз, если он не находиться в финишной позиции. Ограничение финишной позиции
-        setTimeout(() => {
-          setTop(top + 168) // шаг блока вниз
-        }, 2000)
-    }, 2000)
-  }, [refresh])
+
+  // useEffect(() => { // перезапуск блока
+  //   setTimeout(() => {
+  //     if (top < 520) // запуск блока вниз, если он не находиться в финишной позиции. Ограничение финишной позиции
+  //       setTimeout(() => {
+  //         setTop(top + 168) // шаг блока вниз
+  //       }, 2000)
+  //   }, 2000)
+  // }, [refresh])
 
   const handlerRefresh = () => { // сигнальная переменная кнопки рефреш
     setRefresh(refresh + 1)
     setCubeStyle(`${style.falling_block}`)
-    setTop(-150)
-    console.log('refresh');
+    setTop(-495)
+    setPosition(920)
   }
 
   return (

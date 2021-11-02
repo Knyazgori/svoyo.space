@@ -1,10 +1,10 @@
 .game_field {
   position: absolute;
-  height: 1150px;
+  height: 1200px;
   width: 1500px;
   right: 0px;
   top: 0px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   z-index: 1;
   overflow: hidden;
 }
@@ -14,11 +14,11 @@
   position: relative;
   top: -160px;
   left: 940px;
-  height: 544px;
-  width: 544px;
+  height: 595px;
+  width: 595px;
   z-index: 1;
   transition: top 2s, transform 1s, left 1s;
-  /* border: 1px solid rgb(0, 47, 255); */
+  border: 1px solid rgb(0, 47, 255);
 
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
@@ -30,7 +30,8 @@
 }
 
 .svg_falling{
-  margin-top: 188px;
+  margin-top: 215px;
+  margin-left: 25px;
 }
 
 .rotate_0 {

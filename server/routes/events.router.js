@@ -24,8 +24,8 @@ router.route('/:id')
     try {
       const { id } = req.params
 
-      const event = await EventVisitor.findOne({ 
-        where: { event: Number(id) },
+      const event = await Event.findOne({ 
+        where: { id: Number(id) },
         include: [Visitor]
       })
 
