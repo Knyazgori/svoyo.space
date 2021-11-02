@@ -1,0 +1,184 @@
+.letter_place {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 70px;
+  width: 1728px;
+  height: 872px;
+  color: #ff0000;
+}
+
+.letter_place .letter {
+  align-self: center;
+}
+
+.letter_place .save {
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.letter_place .name {
+  position: absolute;
+  transform: rotate(-2.35deg);
+  width: 173.79px;
+  height: 41.38px;
+  border: none;
+  left: 295px;
+  top: 630px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
+
+.letter_place .name::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.letter_place .name:hover::-webkit-input-placeholder {
+  color: #d2d2d2;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.letter_place .nickname {
+  position: absolute;
+  transform: rotate(-2.35deg);
+  width: 173.79px;
+  height: 41.38px;
+  border: none;
+  left: 520px;
+  top: 621px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
+
+.letter_place .nickname::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.letter_place .nickname:hover::-webkit-input-placeholder {
+  color: #d2d2d2;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+}
+
+.letter_place .country {
+  position: absolute;
+  transform: rotate(-2.35deg);
+  width: 173.79px;
+  height: 41.38px;
+  border: none;
+  left: 523px;
+  top: 698.5px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
+
+.letter_place .country::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.letter_place .country:hover::-webkit-input-placeholder {
+  color: #d2d2d2;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.letter_place .city {
+  position: absolute;
+  transform: rotate(-2.35deg);
+  width: 173.79px;
+  height: 41.38px;
+  border: none;
+  left: 298px;
+  top: 707.5px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
+
+.letter_place .city::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.letter_place .city:hover::-webkit-input-placeholder {
+  color: #d2d2d2;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.letter_place .first {
+  position: absolute;
+  width: 173.79px;
+  height: 41.38px;
+  border: none;
+  left: 504px;
+  top: 946px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
+
+.letter_place .second {
+  position: absolute;
+  width: 173.79px;
+  height: 41.38px;
+  border: none;
+  left: 861px;
+  top: 830px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
+
+.letter_place .third {
+  position: absolute;
+  width: 173.79px;
+  height: 41.38px;
+  border: none;
+  left: 1245px;
+  top: 739px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
