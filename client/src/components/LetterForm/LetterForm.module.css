@@ -25,7 +25,7 @@
   height: 41.38px;
   border: none;
   left: 295px;
-  top: 633px;
+  top: 630px;
   outline: none;
   font-family: Arial;
   font-style: normal;
@@ -35,11 +35,11 @@
   color: #ff0000;
 }
 
-.letter_place .name:focus::-webkit-input-placeholder {
+.letter_place .name::-webkit-input-placeholder {
   color: transparent;
 }
 
-.letter_place .name::-webkit-input-placeholder {
+.letter_place .name:hover::-webkit-input-placeholder {
   color: #d2d2d2;
   font-family: Arial;
   font-style: normal;
@@ -54,7 +54,7 @@
   height: 41.38px;
   border: none;
   left: 520px;
-  top: 624px;
+  top: 621px;
   outline: none;
   font-family: Arial;
   font-style: normal;
@@ -65,6 +65,10 @@
 }
 
 .letter_place .nickname::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.letter_place .nickname:hover::-webkit-input-placeholder {
   color: #d2d2d2;
   font-family: Arial;
   font-style: normal;
@@ -80,7 +84,7 @@
   height: 41.38px;
   border: none;
   left: 523px;
-  top: 702px;
+  top: 698.5px;
   outline: none;
   font-family: Arial;
   font-style: normal;
@@ -91,6 +95,10 @@
 }
 
 .letter_place .country::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.letter_place .country:hover::-webkit-input-placeholder {
   color: #d2d2d2;
   font-family: Arial;
   font-style: normal;
@@ -105,7 +113,7 @@
   height: 41.38px;
   border: none;
   left: 298px;
-  top: 710.5px;
+  top: 707.5px;
   outline: none;
   font-family: Arial;
   font-style: normal;
@@ -116,6 +124,10 @@
 }
 
 .letter_place .city::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.letter_place .city:hover::-webkit-input-placeholder {
   color: #d2d2d2;
   font-family: Arial;
   font-style: normal;
