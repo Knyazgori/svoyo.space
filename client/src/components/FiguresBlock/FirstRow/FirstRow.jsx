@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function FirstRow(props) {
   return (
@@ -12,7 +13,7 @@ function FirstRow(props) {
       }}
     >
       {/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 3 СЛОВА О РОССИИ */}
-      <a style={{ alignSelf: "flex-end", cursor: "pointer", width: "731px", height: "163px", marginRight: "20px" }} href="/russia">
+      <Link style={{ alignSelf: "flex-end", cursor: "pointer", width: "731px", height: "163px", marginRight: "20px" }} to="/russia">
         <svg
           style={{ zIndex: "-1" }}
           width="732"
@@ -78,7 +79,7 @@ function FirstRow(props) {
             fill="#0000FF"
           />
         </svg>
-      </a>
+      </Link>
       {/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// ЮТУБ */}
       <svg
         style={{ zIndex: "-1", marginRight: "20px" }}
@@ -151,7 +152,7 @@ function FirstRow(props) {
         />
       </svg>
       {/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// О НАС */}
-      <a style={{ cursor: "pointer" }} href="/about">
+      <Link style={{ cursor: "pointer" }} to="/about">
         <svg
           style={{ display: "block", zIndex: "-3", cursor: "pointer" }}
           width="543"
@@ -217,7 +218,7 @@ function FirstRow(props) {
             fill="white"
           />
         </svg>
-      </a>
+      </Link>
     </div>
   );
 }
