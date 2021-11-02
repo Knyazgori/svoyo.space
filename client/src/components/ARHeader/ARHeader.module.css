@@ -1,0 +1,15 @@
+.AR_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3125rem 0 0 0;
+  height: 244px;
+}
+
+.AR_header .AR_logo {
+  margin-top: -7px;
+  height: 4rem;
+}
+
+.AR_header .AR_descr {
+  margin-right: 75px;
+}

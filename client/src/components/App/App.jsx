@@ -15,6 +15,7 @@ import Home from '../Home/Home';
 import About from '../About/About';
 import Letter from '../Letter/Letter';
 import Passport from '../Passport/Passport';
+import AR from '../AR/AR';
 
 
 function App() {
@@ -55,6 +56,9 @@ function App() {
         </Route>
         <Route exact path='/passport'>
           <Passport />
+        </Route>
+        <Route exact path='/AR'>
+          <AR />
         </Route>
         <Route exact path="/login">
           <Login />
