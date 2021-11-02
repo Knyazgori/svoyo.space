@@ -1,5 +1,6 @@
 import React from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
+// import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import styles from './Footer.module.css'
 
@@ -10,7 +11,7 @@ function Footer(props) {
           <div className={styles.left}>
             <div className={styles.footer_logo}>
               <p className={styles.footer_descr}>своё — это проект про русскую душу</p>
-              <Link to="#" className={styles.links}><p className={styles.mini_logo}>ё</p></Link>
+              <HashLink to="#" className={styles.links}><p className={styles.mini_logo}>ё</p></HashLink>
             </div>
           </div>
           <div className={styles.right}>
