@@ -1,0 +1,40 @@
+.form_block {
+  margin: 134px auto 0 auto;
+  width: 1610px;
+  height: 1170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form_block .form_block_passport {
+  align-self: center;
+}
+
+.form_block .form_block_save {
+  align-self: flex-end;
+}
+
+.form_block_date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  height: 39.09px;
+  width: 437.58px;
+  left: 1394.24px;
+  top: 883.72px;
+  font-size: 3.25rem;
+  transform: rotate(90deg);
+}
+
+.form_block_info {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 1490px;
+  height: 105.73px;
+  left: 208.24px;
+  top: 1193px;
+  font-size: 2rem;
+}
