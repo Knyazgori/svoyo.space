@@ -14,8 +14,8 @@
   position: relative;
   top: -160px;
   left: 940px;
-  height: 595px;
-  width: 595px;
+  height: 591px;
+  width: 591px;
   z-index: 1;
   transition: top 2s, transform 1s, left 1s;
   border: 1px solid rgb(0, 47, 255);
@@ -31,7 +31,7 @@
 
 .svg_falling{
   margin-top: 215px;
-  margin-left: 25px;
+  margin-left: 24px;
 }
 
 .rotate_0 {

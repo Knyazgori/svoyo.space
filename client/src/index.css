@@ -358,4 +358,5 @@ html, body {
 
 .container {
   margin: 1.5625rem;
+  overflow-x: hidden;
 }
