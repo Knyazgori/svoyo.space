@@ -1,5 +1,7 @@
+require('dotenv').config();
 const express = require('express');
 const router = express.Router();
+const nodemailer = require('nodemailer');
 
 const { Event } = require('../db/models')
 const { Visitor } = require('../db/models');
@@ -40,6 +42,27 @@ router.route('/add_visitor')
   .post(async (req, res) => {
     try {
       const { name, surname, patronymic, birth, event, phone, email } = req.body
+
+      const transporter = nodemailer.createTransport({
+        service: "gmail", 
+        auth: {
+          user: process.env.EMAIL, // заменить на нужные значения
+          pass: process.env.PASSWORD
+        }
+      })
+
+      const mailOptions = {
+        from: 'maryiudina@gmail.com', // заменить на нужные значения
+        to: 'maryiudina@gmail.com', 
+        subject: 'Test',  // заголовок письма 
+        text: 'test text', 
+        attachments: [{
+          filename: 'passport.svg',
+          path: __dirname + '/../../client/public/passport/passportForm.svg'
+        }],
+      }
+      
+      transporter.sendMail(mailOptions);
 
       const new_visitor = await Visitor.create({ name, surname, patronymic, birth, event, phone, email })
       const new_event_visitor = await EventVisitor.create({ event: 1, visitor: new_visitor.id })
