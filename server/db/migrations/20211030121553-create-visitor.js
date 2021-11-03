@@ -21,7 +21,7 @@ module.exports = {
         allowNull: false
       },
       birth: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
         allowNull: false
       },
       event: {
@@ -30,6 +30,10 @@ module.exports = {
       },
       phone: {
         type: Sequelize.INTEGER,
+        allowNull: false
+      },
+      email: {
+        type: Sequelize.TEXT,
         allowNull: false
       },
       createdAt: {

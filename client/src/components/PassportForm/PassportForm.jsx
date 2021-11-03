@@ -30,7 +30,7 @@ function PassportForm(props) {
       headers: {
         'Content-type': 'application/json'
       },
-      body: JSON.stringify({ name: name.current.value, surname: surname.current.value, patronymic: patronymic.current.value, birth: birth.current.value, event: eventName.current.innerText, phone: phone.current.value, }),
+      body: JSON.stringify({ name: name.current.value, surname: surname.current.value, patronymic: patronymic.current.value, birth: birth.current.value, event: eventName.current.innerText, phone: phone.current.value, email: email.current.value }),
     })
     const data = await response
     console.log(data);

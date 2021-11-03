@@ -10,7 +10,7 @@ function Footer(props) {
       <div className={styles.footer}>
           <div className={styles.left}>
             <div className={styles.footer_logo}>
-              <p className={styles.footer_descr}>своё — это проект про русскую душу</p>
+              <p className={styles.footer_descr}>своё - это проект про русскую душу</p>
               <HashLink to="#" className={styles.links}><p className={styles.mini_logo}>ё</p></HashLink>
             </div>
           </div>
