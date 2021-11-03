@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import style from './FirstRow.module.css'
 
 function FirstRow(props) {
   return (
@@ -15,7 +16,7 @@ function FirstRow(props) {
       {/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 3 СЛОВА О РОССИИ */}
       <Link style={{ alignSelf: "flex-end", cursor: "pointer", width: "731px", height: "163px", marginRight: "20px" }} to="/russia">
         <svg
-          style={{ zIndex: "-1" }}
+          style={{ zIndex: "2" }} // 3 слова
           width="732"
           height="163"
           viewBox="0 0 732 163"
@@ -82,7 +83,7 @@ function FirstRow(props) {
       </Link>
       {/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// ЮТУБ */}
       <svg
-        style={{ zIndex: "-1", marginRight: "20px" }}
+        style={{ zIndex: "2", marginRight: "20px" }} // ютуб
         width="543"
         height="352"
         viewBox="0 0 543 352"
@@ -152,9 +153,10 @@ function FirstRow(props) {
         />
       </svg>
       {/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// О НАС */}
-      <Link style={{ cursor: "pointer" }} to="/about">
+      <Link style={{ cursor: "pointer", zIndex: 1 }} to="/about">
+        <div className={style.link_about}></div>
         <svg
-          style={{ display: "block", zIndex: "-3", cursor: "pointer" }}
+          style={{ display: "block", zIndex: 2, cursor: "pointer" }} // о нас
           width="543"
           height="352"
           viewBox="0 0 543 352"
