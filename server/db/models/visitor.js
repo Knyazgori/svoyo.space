@@ -20,23 +20,31 @@ module.exports = (sequelize, DataTypes) => {
   };
   Visitor.init({
     name: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     surname: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     patronymic: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     birth: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     event: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.TEXT,
+      allowNull: false
+    },
+    phone: {
+      type: DataTypes.TEXT,
+      allowNull: false
+    },
+    email: {
+      type: DataTypes.TEXT,
       allowNull: false
     },
   }, {

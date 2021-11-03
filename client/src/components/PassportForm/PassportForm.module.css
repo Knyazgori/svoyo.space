@@ -38,3 +38,132 @@
   top: 1193px;
   font-size: 2rem;
 }
+
+.surname {
+  position: absolute;
+  width: 589.79px;
+  height: 41.38px;
+  border: none;
+  left: 910px;
+  top: 569px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
+
+.name {
+  position: absolute;
+  width: 657.79px;
+  height: 41.38px;
+  border: none;
+  left: 842px;
+  top: 654px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+} 
+
+.patronymic {
+  position: absolute;
+  width: 593.79px;
+  height: 41.38px;
+  border: none;
+  left: 906px;
+  top: 735px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
+
+
+.gender {
+  position: absolute;
+  width: 294.79px;
+  height: 41.38px;
+  border: none;
+  left: 841px;
+  top: 817px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
+
+.birth {
+  position: absolute;
+  width: 207.79px;
+  height: 41.38px;
+  border: none;
+  left: 1292px;
+  top: 816px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
+
+.born {
+  position: absolute;
+  width: 499.79px;
+  height: 41.38px;
+  border: none;
+  left: 1000px;
+  top: 895px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
+
+.phone {
+  position: absolute;
+  width: 599.79px;
+  height: 41.38px;
+  border: none;
+  left: 900px;
+  top: 979px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}  
+
+.email {
+  position: absolute;
+  width: 635.79px;
+  height: 41.38px;
+  border: none;
+  left: 861px;
+  top: 1064px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}  

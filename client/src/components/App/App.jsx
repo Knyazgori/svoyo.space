@@ -57,7 +57,7 @@ function App() {
         <Route exact path='/passport'>
           <Passport />
         </Route>
-        <Route exact path='/AR'>
+        <Route exact path='/ar'>
           <AR />
         </Route>
         <Route exact path="/login">

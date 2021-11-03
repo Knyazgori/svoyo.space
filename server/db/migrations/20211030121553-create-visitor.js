@@ -9,23 +9,31 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       name: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
         allowNull: false
       },
       surname: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
         allowNull: false
       },
       patronymic: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
         allowNull: false
       },
       birth: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
         allowNull: false
       },
       event: {
+        type: Sequelize.TEXT,
+        allowNull: false
+      },
+      phone: {
         type: Sequelize.INTEGER,
+        allowNull: false
+      },
+      email: {
+        type: Sequelize.TEXT,
         allowNull: false
       },
       createdAt: {
