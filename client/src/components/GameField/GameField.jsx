@@ -7,44 +7,44 @@ function GameField(props) {
 
   const [position, setPosition] = useState(920) // стартовая горизонтальная позиция
   const [cubeStyle, setCubeStyle] = useState(style.falling_block) // переменная стилей для управления поворотом блока 
-  const [top, setTop] = useState(-637) // начальное состояние вертикальной позиции
+  const [top, setTop] = useState(-625) // начальное состояние вертикальной позиции
   const [refresh, setRefresh] = useState(0) // переменная обновления игры
 
 
   const moveRight = () => { // смещение вправо
     if (position < 920) {
       if (position === 920 && top < 503) {
-        setPosition(position + 190)
-      } else if (position === 730 && top < 313) {
-        setPosition(position + 190)
-      } else if (position === 540 && top < 123) {
-        setPosition(position + 190)
-      } else if (position === 350 && top < 123) {
-        setPosition(position + 190)
-      } else if (position === 160 && top < -67) {
-        setPosition(position + 190)
+        setPosition(position + 188)
+      } else if (position === 732 && top < 315) {
+        setPosition(position + 188)
+      } else if (position === 544 && top < 127) {
+        setPosition(position + 188)
+      } else if (position === 356 && top < 127) {
+        setPosition(position + 188)
+      } else if (position === 168 && top < -61) {
+        setPosition(position + 188)
       }
     }
   }
 
   const moveLeft = () => { // смещение влево
-    if (position != 160) {
-      if (position === 920 && top < 313) {
-        setPosition(position - 190)
-      } else if (position === 730 && top < 123) {
-        setPosition(position - 190)
-      } else if (position === 540 && top < 123) {
-        setPosition(position - 190)
-      } else if (position === 350 && top < -67) {
-        setPosition(position - 190)
-      } else if (position === 160 && top < -67) {
-        setPosition(position - 190)
+    if (position != 168) {
+      if (position === 920 && top < 315) {
+        setPosition(position - 188)
+      } else if (position === 732 && top < 127) {
+        setPosition(position - 188)
+      } else if (position === 544 && top < 127) {
+        setPosition(position - 188)
+      } else if (position === 356 && top < -61) {
+        setPosition(position - 188)
+      } else if (position === 168 && top < -61) {
+        setPosition(position - 188)
       }
     }
   }
 
   // const moveLeft = () => { // смещение влево, тестовая функция без условий позиционирования
-  //   if (position != 160) {
+  //   if (position != 168) {
   //       setPosition(position - 188)
   //   }
   // }
@@ -60,7 +60,7 @@ function GameField(props) {
       } else if (cubeStyle === `${style.falling_block} ${style.rotate_270}`) {
         setCubeStyle(`${style.falling_block}`)
       }
-    } else if (position === 730 && top < 123) { // проверка - находится ли блок внизу
+    } else if (position === 732 && top < 127) { // проверка - находится ли блок внизу
       if (cubeStyle === style.falling_block) {
         setCubeStyle(`${style.falling_block} ${style.rotate_90}`)
       } else if (cubeStyle === `${style.falling_block} ${style.rotate_90}`) {
@@ -70,7 +70,7 @@ function GameField(props) {
       } else if (cubeStyle === `${style.falling_block} ${style.rotate_270}`) {
         setCubeStyle(`${style.falling_block}`)
       }
-    } else if (position === 540 && top < 123) { // проверка - находится ли блок внизу
+    } else if (position === 544 && top < 127) { // проверка - находится ли блок внизу
       if (cubeStyle === style.falling_block) {
         setCubeStyle(`${style.falling_block} ${style.rotate_90}`)
       } else if (cubeStyle === `${style.falling_block} ${style.rotate_90}`) {
@@ -80,7 +80,7 @@ function GameField(props) {
       } else if (cubeStyle === `${style.falling_block} ${style.rotate_270}`) {
         setCubeStyle(`${style.falling_block}`)
       }
-    }  else if (position === 540 && cubeStyle === `${style.falling_block} ${style.rotate_180}` && top < 123) { // проверка - находится ли блок внизу
+    }  else if (position === 544 && cubeStyle === `${style.falling_block} ${style.rotate_180}` && top < 127) { // проверка - находится ли блок внизу
       if (cubeStyle === style.falling_block) {
         setCubeStyle(`${style.falling_block} ${style.rotate_90}`)
       } else if (cubeStyle === `${style.falling_block} ${style.rotate_90}`) {
@@ -90,7 +90,7 @@ function GameField(props) {
       } else if (cubeStyle === `${style.falling_block} ${style.rotate_270}`) {
         setCubeStyle(`${style.falling_block}`)
       }
-    } else if (position === 350 && top < 123) { // проверка - находится ли блок внизу
+    } else if (position === 356 && top < 127) { // проверка - находится ли блок внизу
       if (cubeStyle === style.falling_block) {
         setCubeStyle(`${style.falling_block} ${style.rotate_90}`)
       } else if (cubeStyle === `${style.falling_block} ${style.rotate_90}`) {
@@ -115,50 +115,49 @@ function GameField(props) {
         setCubeStyle(`${style.falling_block}`)
       }
     }
-
   }
 
   useEffect(() => { // стартовый запуск блока
     console.log(position);
-    if (position === 730) { // движение и остановка блока во второй справа позиции
-      if (top < 313) // проверка финишной позиции. Ограничение финишной позиции 
+    if (position === 732) { // движение и остановка блока во второй справа позиции
+      if (top < 315) // проверка финишной позиции. Ограничение финишной позиции 
         setTimeout(() => {
-          setTop(top + 190) // шаг блока вниз за 2 секунды
+          setTop(top + 188) // шаг блока вниз за 2 секунды
         }, 2000)
-    } else if (position === 540 && cubeStyle != `${style.falling_block} ${style.rotate_180}`) { // движение и остановка блока в третьей слева позиции без перевернутого на 180 градусов блока
-      if (top < 123) // проверка финишной позиции. Ограничение финишной позиции 
+    } else if (position === 544 && cubeStyle != `${style.falling_block} ${style.rotate_180}`) { // движение и остановка блока в третьей слева позиции без перевернутого на 180 градусов блока
+      if (top < 127) // проверка финишной позиции. Ограничение финишной позиции 
         setTimeout(() => {
-          setTop(top + 190) // шаг блока вниз
+          setTop(top + 188) // шаг блока вниз
         }, 2000)
-    } else if (position === 540 && cubeStyle === `${style.falling_block} ${style.rotate_180}`) { // движение и остановка блока в третьей слева позиции без перевернутого на 180 градусов блока
-      if (top < 313) // проверка финишной позиции. Ограничение финишной позиции 
+    } else if (position === 544 && cubeStyle === `${style.falling_block} ${style.rotate_180}`) { // движение и остановка блока в третьей слева позиции без перевернутого на 180 градусов блока
+      if (top < 315) // проверка финишной позиции. Ограничение финишной позиции 
         setTimeout(() => {
-          setTop(top + 190) // шаг блока вниз
+          setTop(top + 188) // шаг блока вниз
         }, 2000)
-    } else if (position === 350 && cubeStyle != `${style.falling_block} ${style.rotate_180}`) { // движение и остановка блока в третьей слева позиции без перевернутого на 180 градусов блока
-      if (top < 123) // проверка финишной позиции. Ограничение финишной позиции 
+    } else if (position === 356 && cubeStyle != `${style.falling_block} ${style.rotate_180}`) { // движение и остановка блока в третьей слева позиции без перевернутого на 180 градусов блока
+      if (top < 127) // проверка финишной позиции. Ограничение финишной позиции 
         setTimeout(() => {
-          setTop(top + 190) // шаг блока вниз
+          setTop(top + 188) // шаг блока вниз
         }, 2000)
-    } else if (position === 350 && cubeStyle === `${style.falling_block} ${style.rotate_180}`) { // движение и остановка блока в третьей слева позиции без перевернутого на 180 градусов блока
-      if (top < 313) // проверка финишной позиции. Ограничение финишной позиции 
+    } else if (position === 356 && cubeStyle === `${style.falling_block} ${style.rotate_180}`) { // движение и остановка блока в третьей слева позиции без перевернутого на 180 градусов блока
+      if (top < 315) // проверка финишной позиции. Ограничение финишной позиции 
         setTimeout(() => {
-          setTop(top + 190) // шаг блока вниз
+          setTop(top + 188) // шаг блока вниз
         }, 2000)
-    } else if (position === 160) { // движение и остановка блока в третьей слева позиции без перевернутого на 180 градусов блока
-      if (top < -67) // проверка финишной позиции. Ограничение финишной позиции 
+    } else if (position === 168) { // движение и остановка блока в третьей слева позиции без перевернутого на 180 градусов блока
+      if (top < -61) // проверка финишной позиции. Ограничение финишной позиции 
         setTimeout(() => {
-          setTop(top + 190) // шаг блока вниз
+          setTop(top + 188) // шаг блока вниз
         }, 2000)
-    } else if (position === 160 && cubeStyle === `${style.falling_block} ${style.rotate_270}`) { // движение и остановка блока в третьей слева позиции без перевернутого на 180 градусов блока
-      if (top < 123) // проверка финишной позиции. Ограничение финишной позиции 
+    } else if (position === 168 && cubeStyle === `${style.falling_block} ${style.rotate_270}`) { // движение и остановка блока в третьей слева позиции без перевернутого на 180 градусов блока
+      if (top < 127) // проверка финишной позиции. Ограничение финишной позиции 
         setTimeout(() => {
-          setTop(top + 190) // шаг блока вниз
+          setTop(top + 188) // шаг блока вниз
         }, 2000)
     } else {
       if (top < 503) // проверка финишной позиции. Ограничение финишной позиции 
         setTimeout(() => {
-          setTop(top + 190) // шаг блока вниз
+          setTop(top + 188) // шаг блока вниз
         }, 2000)
     }
   }, [top, position])
@@ -168,7 +167,7 @@ function GameField(props) {
     setTimeout(() => {
       if (top < 503) // запуск блока вниз, если он не находиться в финишной позиции. Ограничение финишной позиции
         setTimeout(() => {
-          setTop(top + 190) // шаг блока вниз
+          setTop(top + 188) // шаг блока вниз
         }, 2000)
     }, 2000)
   }, [refresh])
@@ -180,57 +179,57 @@ function GameField(props) {
       }
       setRefresh(refresh + 1)
       setCubeStyle(`${style.falling_block}`)
-      setTop(-637)
+      setTop(-625)
       setPosition(920)
 
-    } else if (position === 730 && top === 313) {
-      if (top < 313) { // блокировка кнопки обновления до достижения финальной позиции
+    } else if (position === 732 && top === 315) {
+      if (top < 315) { // блокировка кнопки обновления до достижения финальной позиции
         console.log(null);
       }
       setRefresh(refresh + 1)
       setCubeStyle(`${style.falling_block}`)
-      setTop(-637)
+      setTop(-625)
       setPosition(920)
     }
-    else if (position === 540 && top === 123) {
-      if (top < 123) {
+    else if (position === 544 && top === 127) {
+      if (top < 127) {
         console.log(null);
       }
       setRefresh(refresh + 1)
       setCubeStyle(`${style.falling_block}`)
-      setTop(-637)
+      setTop(-625)
       setPosition(920)
-    } else if (position === 540 && cubeStyle === `${style.falling_block} ${style.rotate_180}` && top === 313) {
-      if (top < 313) {
+    } else if (position === 544 && cubeStyle === `${style.falling_block} ${style.rotate_180}` && top === 315) {
+      if (top < 315) {
         console.log(null);
       }
       setRefresh(refresh + 1)
       setCubeStyle(`${style.falling_block}`)
-      setTop(-637)
+      setTop(-625)
       setPosition(920)
-    } else if (position === 350 && top === 123) {
-      if (top < 123) {
+    } else if (position === 356 && top === 127) {
+      if (top < 127) {
         console.log(null);
       }
       setRefresh(refresh + 1)
       setCubeStyle(`${style.falling_block}`)
-      setTop(-637)
+      setTop(-625)
       setPosition(920)
-    } else if (position === 350 && cubeStyle === `${style.falling_block} ${style.rotate_180}` && top === 313) {
-      if (top < 313) {
+    } else if (position === 356 && cubeStyle === `${style.falling_block} ${style.rotate_180}` && top === 315) {
+      if (top < 315) {
         console.log(null);
       }
       setRefresh(refresh + 1)
       setCubeStyle(`${style.falling_block}`)
-      setTop(-637)
+      setTop(-625)
       setPosition(920)
-    } else if (position === 160 && top === -67) {
-      if (top < 313) {
+    } else if (position === 168 && top === -61) {
+      if (top < 315) {
         console.log(null);
       }
       setRefresh(refresh + 1)
       setCubeStyle(`${style.falling_block}`)
-      setTop(-637)
+      setTop(-625)
       setPosition(920)
     }
   }
