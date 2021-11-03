@@ -11,9 +11,19 @@ function GameField(props) {
   const [refresh, setRefresh] = useState(0) // переменная обновления игры
 
 
-  const moveRight = (positionX, positionY) => { // смещение вправо
+  const moveRight = () => { // смещение вправо
     if (position < 920) {
-      setPosition(position + 190)
+      if (position === 920 && top < 503) {
+        setPosition(position + 190)
+      } else if (position === 730 && top < 313) {
+        setPosition(position + 190)
+      } else if (position === 540 && top < 123) {
+        setPosition(position + 190)
+      } else if (position === 350 && top < 123) {
+        setPosition(position + 190)
+      } else if (position === 160 && top < -67) {
+        setPosition(position + 190)
+      }
     }
   }
 
@@ -23,16 +33,64 @@ function GameField(props) {
         setPosition(position - 190)
       } else if (position === 730 && top < 123) {
         setPosition(position - 190)
-      } else if (position === 540 && top < -67) {
+      } else if (position === 540 && top < 123) {
         setPosition(position - 190)
       } else if (position === 350 && top < -67) {
+        setPosition(position - 190)
+      } else if (position === 160 && top < -67) {
         setPosition(position - 190)
       }
     }
   }
 
+  // const moveLeft = () => { // смещение влево, тестовая функция без условий позиционирования
+  //   if (position != 160) {
+  //       setPosition(position - 188)
+  //   }
+  // }
+
   const rotateRightHandler = () => { // функция поворота блока вправо через присвоение дополнительного стиля
-    if (top < 503) { // проверка - находится ли блок внизу
+    if (position === 920 && top < 503) { // проверка - находится ли блок внизу
+      if (cubeStyle === style.falling_block) {
+        setCubeStyle(`${style.falling_block} ${style.rotate_90}`)
+      } else if (cubeStyle === `${style.falling_block} ${style.rotate_90}`) {
+        setCubeStyle(`${style.falling_block} ${style.rotate_180}`)
+      } else if (cubeStyle === `${style.falling_block} ${style.rotate_180}`) {
+        setCubeStyle(`${style.falling_block} ${style.rotate_270}`)
+      } else if (cubeStyle === `${style.falling_block} ${style.rotate_270}`) {
+        setCubeStyle(`${style.falling_block}`)
+      }
+    } else if (position === 730 && top < 123) { // проверка - находится ли блок внизу
+      if (cubeStyle === style.falling_block) {
+        setCubeStyle(`${style.falling_block} ${style.rotate_90}`)
+      } else if (cubeStyle === `${style.falling_block} ${style.rotate_90}`) {
+        setCubeStyle(`${style.falling_block} ${style.rotate_180}`)
+      } else if (cubeStyle === `${style.falling_block} ${style.rotate_180}`) {
+        setCubeStyle(`${style.falling_block} ${style.rotate_270}`)
+      } else if (cubeStyle === `${style.falling_block} ${style.rotate_270}`) {
+        setCubeStyle(`${style.falling_block}`)
+      }
+    } else if (position === 540 && top < 123) { // проверка - находится ли блок внизу
+      if (cubeStyle === style.falling_block) {
+        setCubeStyle(`${style.falling_block} ${style.rotate_90}`)
+      } else if (cubeStyle === `${style.falling_block} ${style.rotate_90}`) {
+        setCubeStyle(`${style.falling_block} ${style.rotate_180}`)
+      } else if (cubeStyle === `${style.falling_block} ${style.rotate_180}`) {
+        setCubeStyle(`${style.falling_block} ${style.rotate_270}`)
+      } else if (cubeStyle === `${style.falling_block} ${style.rotate_270}`) {
+        setCubeStyle(`${style.falling_block}`)
+      }
+    }  else if (position === 540 && cubeStyle === `${style.falling_block} ${style.rotate_180}` && top < 123) { // проверка - находится ли блок внизу
+      if (cubeStyle === style.falling_block) {
+        setCubeStyle(`${style.falling_block} ${style.rotate_90}`)
+      } else if (cubeStyle === `${style.falling_block} ${style.rotate_90}`) {
+        setCubeStyle(`${style.falling_block} ${style.rotate_180}`)
+      } else if (cubeStyle === `${style.falling_block} ${style.rotate_180}`) {
+        setCubeStyle(`${style.falling_block} ${style.rotate_270}`)
+      } else if (cubeStyle === `${style.falling_block} ${style.rotate_270}`) {
+        setCubeStyle(`${style.falling_block}`)
+      }
+    } else if (position === 350 && top < 123) { // проверка - находится ли блок внизу
       if (cubeStyle === style.falling_block) {
         setCubeStyle(`${style.falling_block} ${style.rotate_90}`)
       } else if (cubeStyle === `${style.falling_block} ${style.rotate_90}`) {

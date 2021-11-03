@@ -12,9 +12,12 @@ function PassportForm(props) {
   const birth = useRef()
   const born = useRef()
   const phone = useRef()
+  const email = useRef()
+
   const hours = useRef()
   const minutes = useRef()
   const date = useRef()
+  
 
 
 
