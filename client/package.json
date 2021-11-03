@@ -6,9 +6,11 @@
     "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
     "@mui/material": "^5.0.4",
+    "@react-three/drei": "^7.19.6",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "drei": "^2.2.21",
     "js-cookie": "^3.0.1",
     "node": "^14.18.1",
     "react": "^17.0.2",
@@ -19,8 +21,11 @@
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "4.0.3",
     "react-three-fbx-viewer": "^1.0.0",
+    "react-three-fiber": "^6.0.13",
     "redux": "^4.1.2",
     "redux-thunk": "^2.4.0",
+    "three": "^0.134.0",
+    "threejs-fbxloader": "^0.0.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
