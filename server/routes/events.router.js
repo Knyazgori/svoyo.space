@@ -41,7 +41,7 @@ router.route('/:id')
 router.route('/add_visitor')
   .post(async (req, res) => {
     try {
-      const { name, surname, patronymic, birth, event, phone } = req.body;
+      const { name, surname, patronymic, birth, event, phone, email } = req.body
 
       const transporter = nodemailer.createTransport({
         service: "gmail", 
@@ -64,7 +64,7 @@ router.route('/add_visitor')
       
       transporter.sendMail(mailOptions);
 
-      const new_visitor = await Visitor.create({ name, surname, patronymic, birth, event, phone })
+      const new_visitor = await Visitor.create({ name, surname, patronymic, birth, event, phone, email })
       const new_event_visitor = await EventVisitor.create({ event: 1, visitor: new_visitor.id })
 
       res.json({ userAdded: true });

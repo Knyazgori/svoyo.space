@@ -41,11 +41,11 @@
 
 .surname {
   position: absolute;
-  width: 556.79px;
+  width: 589.79px;
   height: 41.38px;
   border: none;
-  left: 913px;
-  top: 555px;
+  left: 910px;
+  top: 569px;
   outline: none;
   font-family: Arial;
   font-style: normal;
@@ -57,11 +57,11 @@
 
 .name {
   position: absolute;
-  width: 622.79px;
+  width: 657.79px;
   height: 41.38px;
   border: none;
-  left: 848px;
-  top: 638px;
+  left: 842px;
+  top: 654px;
   outline: none;
   font-family: Arial;
   font-style: normal;
@@ -73,11 +73,11 @@
 
 .patronymic {
   position: absolute;
-  width: 574.79px;
+  width: 593.79px;
   height: 41.38px;
   border: none;
-  left: 909px;
-  top: 722px;
+  left: 906px;
+  top: 735px;
   outline: none;
   font-family: Arial;
   font-style: normal;
@@ -90,11 +90,11 @@
 
 .gender {
   position: absolute;
-  width: 288.79px;
+  width: 294.79px;
   height: 41.38px;
   border: none;
-  left: 844px;
-  top: 812px;
+  left: 841px;
+  top: 817px;
   outline: none;
   font-family: Arial;
   font-style: normal;
@@ -106,11 +106,11 @@
 
 .birth {
   position: absolute;
-  width: 201.79px;
+  width: 207.79px;
   height: 41.38px;
   border: none;
-  left: 1295px;
-  top: 812px;
+  left: 1292px;
+  top: 816px;
   outline: none;
   font-family: Arial;
   font-style: normal;
@@ -122,11 +122,11 @@
 
 .born {
   position: absolute;
-  width: 495.79px;
+  width: 499.79px;
   height: 41.38px;
   border: none;
-  left: 1002px;
-  top: 891px;
+  left: 1000px;
+  top: 895px;
   outline: none;
   font-family: Arial;
   font-style: normal;
@@ -138,11 +138,11 @@
 
 .phone {
   position: absolute;
-  width: 595.79px;
+  width: 599.79px;
   height: 41.38px;
   border: none;
-  left: 902px;
-  top: 975px;
+  left: 900px;
+  top: 979px;
   outline: none;
   font-family: Arial;
   font-style: normal;
@@ -154,11 +154,11 @@
 
 .email {
   position: absolute;
-  width: 595.79px;
+  width: 635.79px;
   height: 41.38px;
   border: none;
-  left: 902px;
-  top: 975px;
+  left: 861px;
+  top: 1064px;
   outline: none;
   font-family: Arial;
   font-style: normal;
