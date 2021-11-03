@@ -4,7 +4,7 @@
   width: 1500px;
   right: 0px;
   top: 0px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   z-index: 1;
   overflow: hidden;
 }
@@ -18,7 +18,7 @@
   width: 591px;
   z-index: 1;
   transition: top 2s, transform 1s, left 1s;
-  border: 1px solid rgb(0, 47, 255);
+  /* border: 1px solid rgb(0, 47, 255); */
 
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);

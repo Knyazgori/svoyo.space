@@ -224,7 +224,7 @@ function GameField(props) {
       setTop(-625)
       setPosition(920)
     } else if (position === 168 && top === -61) {
-      if (top < 315) {
+      if (top < 127) {
         console.log(null);
       }
       setRefresh(refresh + 1)
