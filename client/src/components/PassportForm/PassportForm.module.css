@@ -151,3 +151,19 @@
   background-color: transparent;
   color: #ff0000;
 }  
+
+.email {
+  position: absolute;
+  width: 595.79px;
+  height: 41.38px;
+  border: none;
+  left: 902px;
+  top: 975px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}  
