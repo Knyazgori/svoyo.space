@@ -1,6 +1,4 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
 
 import styles from './Footer.module.css'
 
@@ -11,29 +9,29 @@ function Footer(props) {
           <div className={styles.left}>
             <div className={styles.footer_logo}>
               <p className={styles.footer_descr}>своё - это проект про русскую душу</p>
-              <HashLink to="#" className={styles.links}><p className={styles.mini_logo}>ё</p></HashLink>
+              <p className={styles.mini_logo}>ё</p>
             </div>
           </div>
           <div className={styles.right}>
             <div className={styles.links}>
-              <li>tg</li>
-              <li>inst</li>
-              <li>сайт</li>
-              <li>почта</li>
-              <li>ютуб</li>
+              <li className={styles.linkss}>tg</li>
+              <li className={styles.linkss}>inst</li>
+              <li className={styles.linkss}>сайт</li>
+              <li className={styles.linkss}>почта</li>
+              <li className={styles.linkss}>ютуб</li>
             </div>
             <div className={styles.email}>
               <a target="_blank" rel="noreferrer" className={styles.links} href="https://t.me/make_russia_great_again"><li>@make_russia_great_again</li></a>
               <a target="_blank" rel="noreferrer" className={styles.links} href="https://www.instagram.com/svoyo.space/"><li>@svoyo.space</li></a>
               <a target="_blank" rel="noreferrer" className={styles.links} href="https://svoyo.space/"><li>svoyo.space</li></a>
-              <li>svoyo.space@gmail.com</li>
+              <li className={styles.linkss}>svoyo.space@gmail.com</li>
             </div>
             <div className={styles.people}>
-              <li>Всему голова: Сергей Клещев</li>
-              <li>Зачинатели всея своё: Адель Галимова, Катя Курмышкина и Маша Козловцева</li>
-              <li>Художественных дел мастерицы: Адель, Катя и Маша</li>
-              <li>Компьютерных дел мaстера: Максим Антонов, Игорь Князев</li>
-              <li>Буквы: Arial и Arial Narrow</li>
+              <li className={styles.linkss}>Всему голова: Сергей Клещев</li>
+              <li className={styles.linkss}>Зачинатели всея своё: Адель Галимова, Катя Курмышкина и Маша Козловцева</li>
+              <li className={styles.linkss}>Художественных дел мастерицы: Адель, Катя и Маша</li>
+              <li className={styles.linkss}>Компьютерных дел мaстера: Максим Антонов, Игорь Князев</li>
+              <li className={styles.linkss}>Буквы: Arial и Arial Narrow</li>
             </div>
         </div>
       </div>
