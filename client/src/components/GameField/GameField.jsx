@@ -238,8 +238,9 @@ function GameField(props) {
 
   return (
     <div className={style.game_field}>
+      <div style={{height: '83px', width: '1000px'}}></div>
       <GameNav style={{ marginTop: '10px' }} moveRight={moveRight} moveLeft={moveLeft} rotateRightHandler={rotateRightHandler} rotateLeftHandler={rotateLeftHandler} handlerRefresh={handlerRefresh} />
-      <svg style={{ marginTop: '10px' }} width="401" height="62" viewBox="0 0 401 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+      {/* <svg style={{ marginTop: '10px' }} width="401" height="62" viewBox="0 0 401 62" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1.60156 21V6.68359H3.49609V12.5625H10.9375V6.68359H12.832V21H10.9375V14.252H3.49609V21H1.60156Z" fill="#FF0000" />
         <path d="M13.9238 21L19.4219 6.68359H21.4629L27.3223 21H25.1641L23.4941 16.6641H17.5078L15.9355 21H13.9238ZM18.0547 15.1211H22.9082L21.4141 11.1562C20.9583 9.95182 20.6198 8.96224 20.3984 8.1875C20.2161 9.10547 19.959 10.0169 19.627 10.9219L18.0547 15.1211Z" fill="#FF0000" />
         <path d="M36.9883 21H35.0938V15.2285C33.3945 15.86 31.9069 16.1758 30.6309 16.1758C29.6348 16.1758 28.7559 15.9447 27.9941 15.4824C27.2324 15.0137 26.7214 14.4212 26.4609 13.7051C26.207 12.9889 26.0801 12.0514 26.0801 10.8926V6.68359H27.9746V10.7168C27.9746 12.2793 28.2578 13.3079 28.8242 13.8027C29.3971 14.291 30.084 14.5352 30.8848 14.5352C32.2194 14.5352 33.6224 14.2389 35.0938 13.6465V6.68359H36.9883V21Z" fill="#FF0000" />
@@ -303,7 +304,7 @@ function GameField(props) {
         <path d="M229.52 58V43.6836H231.414V49.5625H238.855V43.6836H240.75V58H238.855V51.252H231.414V58H229.52Z" fill="#FF0000" />
         <path d="M243.943 43.6836H245.662V55.0215L253.279 43.6836H255.184V58H253.465V46.6914L245.838 58H243.943V43.6836Z" fill="#FF0000" />
         <path d="M259.002 54.4453L258.465 46.8574V43.6836H260.643V46.8574L260.135 54.4453H259.002ZM258.543 58V55.998H260.564V58H258.543Z" fill="#FF0000" />
-      </svg>
+      </svg> */}
       <FallindBlock style={cubeStyle} top={top} position={position} cubeStyle={cubeStyle} />
     </div>
   );
