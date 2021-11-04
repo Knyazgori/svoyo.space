@@ -4,6 +4,7 @@
   height: 1170px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -13,6 +14,12 @@
 
 .form_block .form_block_save {
   align-self: flex-end;
+}
+
+.form_button {
+  background-color: transparent;
+  width: 260px;
+  border: none;
 }
 
 .form_block_date {
@@ -55,6 +62,22 @@
   color: #ff0000;
 }
 
+.surname_p {
+  position: absolute;
+  width: 589.79px;
+  height: 41.38px;
+  border: none;
+  left: 910px;
+  top: 613px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
+
 .name {
   position: absolute;
   width: 657.79px;
@@ -70,6 +93,22 @@
   background-color: transparent;
   color: #ff0000;
 } 
+
+.name_p {
+  position: absolute;
+  width: 657.79px;
+  height: 41.38px;
+  border: none;
+  left: 842px;
+  top: 698px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
 
 .patronymic {
   position: absolute;
@@ -87,6 +126,21 @@
   color: #ff0000;
 }
 
+.patronymic_p {
+  position: absolute;
+  width: 593.79px;
+  height: 41.38px;
+  border: none;
+  left: 906px;
+  top: 779px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
 
 .gender {
   position: absolute;
@@ -104,13 +158,45 @@
   color: #ff0000;
 }
 
+.gender_p {
+  position: absolute;
+  width: 294.79px;
+  height: 41.38px;
+  border: none;
+  left: 841px;
+  top: 861px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
+
 .birth {
   position: absolute;
-  width: 207.79px;
+  width: 258.79px;
   height: 41.38px;
   border: none;
   left: 1292px;
   top: 816px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
+
+.birth_p {
+  position: absolute;
+  width: 258.79px;
+  height: 41.38px;
+  border: none;
+  left: 1292px;
+  top: 860px;
   outline: none;
   font-family: Arial;
   font-style: normal;
@@ -136,6 +222,22 @@
   color: #ff0000;
 }
 
+.born_p {
+  position: absolute;
+  width: 499.79px;
+  height: 41.38px;
+  border: none;
+  left: 1000px;
+  top: 939px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
+
 .phone {
   position: absolute;
   width: 599.79px;
@@ -152,6 +254,22 @@
   color: #ff0000;
 }  
 
+.phone_p {
+  position: absolute;
+  width: 599.79px;
+  height: 41.38px;
+  border: none;
+  left: 900px;
+  top: 1023px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}
+
 .email {
   position: absolute;
   width: 635.79px;
@@ -167,3 +285,19 @@
   background-color: transparent;
   color: #ff0000;
 }  
+
+.email_p {
+  position: absolute;
+  width: 635.79px;
+  height: 41.38px;
+  border: none;
+  left: 861px;
+  top: 1108px;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  background-color: transparent;
+  color: #ff0000;
+}

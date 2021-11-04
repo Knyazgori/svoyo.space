@@ -1,8 +1,40 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import styles from './PassportForm.module.css'
 
 function PassportForm(props) {
+  // surname state
+  const [surnameInput, setSurname] = useState(true)
+  const [surnameVal, setValSurname] = useState('Пушкин')
+
+  // name state
+  const [nameInput, setName] = useState(true)
+  const [nameVal, setValName] = useState('Александр')
+
+  // patronymic state
+  const [patronymicInput, setPatronymic] = useState(true)
+  const [patronymicVal, setValPatronymic] = useState('Сергеевич')
+  
+  // gender state
+  const [genderInput, setGender] = useState(true)
+  const [genderVal, setValGender] = useState('men')
+
+  // birth state
+  const [birthInput, setBirth] = useState(true)
+  const [birthVal, setValBirth] = useState(1800)
+  
+  // born state
+  const [bornInput, setBorn] = useState(true)
+  const [bornVal, setValBorn] = useState('Leningrad')
+
+  // phone state
+  const [phoneInput, setPhone] = useState(true)
+  const [phoneVal, setValPhone] = useState(89003332)
+
+  // email state
+  const [emailInput, setEmail] = useState(true)
+  const [emailVal, setValEmail] = useState('pushkin@poet')
+  
 
   const eventName = useRef()
   const surname = useRef()
@@ -20,25 +52,76 @@ function PassportForm(props) {
 
 
 
+  const show = {
+    display: 'block'
+  }
+
+  const hidden = {
+    display: 'none'
+  }
+
+  useEffect(() => {
+    
+    // surname
+    if (surnameVal.search(/^[а-яА-ЯёЁ0-9\s]+$/) === -1) {
+      setSurname((prevSurname) => prevSurname = false)  
+    } else {
+      setSurname((prevSurname) => prevSurname = true)
+    }
+
+    // name
+    if (nameVal.search(/^[а-яА-ЯёЁ0-9\s]+$/) === -1) {
+      setName((prevName) => prevName = false)
+    } else {
+      setName((prevName) => prevName = true)
+    }
+    
+    // patronymic
+    if (patronymicVal.search(/^[а-яА-ЯёЁ0-9\s]+$/) === -1) {
+      setPatronymic((prevPatronymic) => prevPatronymic = false)
+    } else {
+      setPatronymic((prevPatronymic) => prevPatronymic = true)
+    }
+
+    if (genderVal.search(/[А-яЁё]/) === -1) {
+      setGender((prevGender) => prevGender = false)
+    } else {
+      setGender((prevGender) => prevGender = false)
+    }
+    
+    // } else if (birth.current.value.search(/^[\d.,-]*$/) === -1 ) {
+    //   setBirth((prevBirth) => prevBirth = false)
+    // } else if (born.current.value.search(/[А-яЁё]/) === -1) {
+    //   setBorn((prevBorn) => prevBorn = false)
+    // } else if (phone.current.value.search(/^[\d.,-]*$/) === -1 ) {
+    //   setPhone((prevPhone) => prevPhone = false)
+    // } else if (email.current.value.search(/[А-яЁё]/) === -1) {
+    //   setEmail((prevEmail) => prevEmail = false)
+    // } else {
+    //   setSurname((prevSurname) => prevSurname = true)
+    // }
+  }, [surnameInput, surnameVal, nameVal, nameInput, patronymicVal, patronymicInput, genderInput, birthInput, bornInput, phoneInput, emailInput])
 
   const handlerSubmit = async (event) => {
     event.preventDefault();
 
-    const response = fetch('http://localhost:5000/event/add_visitor', {
-      method: 'POST',
-      credentials: 'include',
-      headers: {
-        'Content-type': 'application/json'
-      },
-      body: JSON.stringify({ name: name.current.value, surname: surname.current.value, patronymic: patronymic.current.value, birth: birth.current.value, event: eventName.current.innerText, phone: phone.current.value, email: email.current.value }),
-    })
-    const data = await response
-    console.log(data);
-  }
+    
+      const response = fetch('http://localhost:5000/event/add_visitor', {
+        method: 'POST',
+        credentials: 'include',
+        headers: {
+          'Content-type': 'application/json'
+        },
+        body: JSON.stringify({ name: name.current.value, surname: surname.current.value, patronymic: patronymic.current.value, birth: birth.current.value, event: eventName.current.innerText, phone: phone.current.value, email: email.current.value }),
+      })
+      const data = await response
+      console.log(data);
+    }
+  
 
   return (
     <form className={styles.form_block} onSubmit={handlerSubmit}>
-      <svg className={styles.form_block_passport} width="1490" height="1031" viewBox="0 0 1490 1031" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className={styles.form_block_passport} width="1490" height="1031" viewBox="0 0 1490 1031" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="1" y="1" width="1487.06" height="1028.15" rx="19.0418" fill="white" stroke="#FF0000" stroke-width="2" />
         <rect x="73.0527" y="180.041" width="406.291" height="543.138" fill="white" stroke="#FF0000" stroke-width="2" />
         <line x1="701.836" y1="199.007" x2="1299.6" y2="199.007" stroke="#FF0101" stroke-width="2" />
@@ -239,15 +322,29 @@ function PassportForm(props) {
         </defs>
       </svg>
 
+      <input name='surname' ref={surname} className={styles.surname} defaultValue={surnameVal} onChange={(event) => setValSurname(event.target.value)} autoComplete="off" type="text" />
+      <p style={surnameInput ? hidden : show} id='surname' className={styles.surname_p}>по-русски говори</p>
 
-      <input name='surname' ref={surname} className={styles.surname} defaultValue='Igor' type="text" />
-      <input name='name' ref={name} className={styles.name} defaultValue='Igor' type="text" />
-      <input name='patronymic' ref={patronymic} className={styles.patronymic} defaultValue='Igor' type="text" />
-      <input name='gender' ref={gender} className={styles.gender} defaultValue='Igor' type="text" />
-      <input name='birth' ref={birth} className={styles.birth} defaultValue='22122001' type="text" />
-      <input name='born' ref={born} className={styles.born} defaultValue='Igor' type="text" />
-      <input name='phone' ref={phone} className={styles.phone} defaultValue='890232030' type="text" />
-      <input name='email' ref={email} className={styles.email} defaultValue='ikkniazev.spam@yandex.ru' type="text" />
+      <input name='name' ref={name} className={styles.name} defaultValue={nameVal} onChange={(event) => setValName(event.target.value)} autoComplete="off" type="text" />
+      <p style={nameInput ? hidden : show} className={styles.name_p}>по-русски говори</p>
+
+      <input name='patronymic' ref={patronymic} className={styles.patronymic} defaultValue={patronymicVal} onChange={(event) => setValPatronymic(event.target.value)} autoComplete="off" type="text" />
+      <p style={patronymicInput ? hidden : show} className={styles.patronymic_p}>по-русски говори</p>
+
+      <input name='gender' ref={gender} className={styles.gender} defaultValue={genderVal} onChange={(event) => setValGender(event.target.value)} autoComplete="off" type="text" />
+      <p style={genderInput ? hidden : show} className={styles.gender_p}>по-русски говори</p>
+
+      <input name='birth' ref={birth} className={styles.birth} autoComplete="off" defaultValue={birthVal} onChange={(event) => setValBirth(event.target.value)} type="date" />
+      <p style={birthInput ? hidden : show} className={styles.birth_p}>цифрами пиши</p>
+
+      <input name='born' ref={born} className={styles.born} autoComplete="off" defaultValue={bornVal} onChange={(event) => setValBorn(event.target.value)} type="text" />
+      <p style={bornInput ? hidden : show} className={styles.born_p}>по-русски говори</p>
+
+      <input name='phone' ref={phone} className={styles.phone} autoComplete="off" defaultValue={phoneVal} onChange={(event) => setValPhone(event.target.value)} type="tel" />
+      <p style={phoneInput ? hidden : show} className={styles.phone_p}>цифрами пиши</p>
+
+      <input name='email' ref={email} className={styles.email} autoComplete="off" defaultValue={emailVal} onChange={(event) => setValEmail(event.target.value)} type="email" />
+      <p style={emailInput ? hidden : show} className={styles.email_p}>тут по-английски надо</p>
 
 
       <div className={styles.form_block_date}>
@@ -259,7 +356,7 @@ function PassportForm(props) {
         <p ref={eventName} className={styles.form_block_info_p1}>СВОЯ_ТУСОВКА_12: 30_01/01/22_НАБЕРЕЖНАЯ_КАНАЛА_ГРИБОЕДОВА_123_ЕЩЕ_ТУ<br />Т_БУДУТ_ПРИКОЛЫ_НО_ПОКА_ОБОЙДЕТЕСЬ_БЕЗ_ПРИКОЛО<br />В_НИКАКИХ_ПРИКОЛОВ_ЗАПРЕЩАЮ_ПРИКОЛЫ</p>
       </div>
 
-      <button>
+      <button className={styles.form_button}>
         <svg className={styles.form_block_save} width="250" height="59" viewBox="0 0 250 59" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M249.241 50.3408L235.926 42.6287L235.905 58.0164L249.241 50.3408ZM0.99817 51.3326L237.246 51.657L237.25 48.9917L1.00183 48.6674L0.99817 51.3326Z" fill="#FF0000" />
           <path d="M17.4239 28.7507L21.3025 29.3647C20.8567 32.746 19.7332 35.3266 17.9321 37.1062C16.1488 38.8859 14 39.7758 11.4856 39.7758C8.43621 39.7758 5.92181 38.53 3.94239 36.0384C1.9808 33.5291 1 29.8274 1 24.9333C1 20.0036 1.98971 16.3107 3.96914 13.8548C5.96639 11.381 8.52538 10.1442 11.6461 10.1442C14.0535 10.1442 16.0775 10.8916 17.7181 12.3865C19.3765 13.8815 20.4376 16.1239 20.9012 19.1137L17.0761 19.8345C16.7016 17.9124 16.0508 16.4798 15.1235 15.5366C14.1962 14.5755 13.0816 14.095 11.7798 14.095C9.83608 14.095 8.22222 14.9582 6.93827 16.6845C5.67215 18.393 5.03909 21.1159 5.03909 24.8532C5.03909 28.7151 5.6454 31.5092 6.85802 33.2355C8.08848 34.9617 9.65775 35.8249 11.5658 35.8249C13.0638 35.8249 14.3388 35.2554 15.3909 34.1164C16.4609 32.9596 17.1385 31.171 17.4239 28.7507Z" fill="#FF0000" />

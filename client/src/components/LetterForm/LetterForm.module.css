@@ -2,23 +2,28 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: row;
   margin-top: 70px;
   width: 1728px;
   height: 872px;
   color: #ff0000;
 }
 
-.letter_place .letter {
+.letter {
   align-self: center;
 }
 
-.letter_place .save {
+.letter {
+  align-self: center;
+  transform: translateX(-100%);
+}
+
+.save {
   align-self: flex-end;
   cursor: pointer;
 }
 
-.letter_place .name {
+.name {
   position: absolute;
   transform: rotate(-2.35deg);
   width: 173.79px;
@@ -35,11 +40,11 @@
   color: #ff0000;
 }
 
-.letter_place .name::-webkit-input-placeholder {
+.name::-webkit-input-placeholder {
   color: transparent;
 }
 
-.letter_place .name:hover::-webkit-input-placeholder {
+.name:hover::-webkit-input-placeholder {
   color: #d2d2d2;
   font-family: Arial;
   font-style: normal;
@@ -47,7 +52,7 @@
   font-size: 2rem;
 }
 
-.letter_place .nickname {
+.nickname {
   position: absolute;
   transform: rotate(-2.35deg);
   width: 173.79px;
@@ -64,11 +69,11 @@
   color: #ff0000;
 }
 
-.letter_place .nickname::-webkit-input-placeholder {
+.nickname::-webkit-input-placeholder {
   color: transparent;
 }
 
-.letter_place .nickname:hover::-webkit-input-placeholder {
+.nickname:hover::-webkit-input-placeholder {
   color: #d2d2d2;
   font-family: Arial;
   font-style: normal;
@@ -77,7 +82,7 @@
   background-color: transparent;
 }
 
-.letter_place .country {
+.country {
   position: absolute;
   transform: rotate(-2.35deg);
   width: 173.79px;
@@ -94,11 +99,11 @@
   color: #ff0000;
 }
 
-.letter_place .country::-webkit-input-placeholder {
+.country::-webkit-input-placeholder {
   color: transparent;
 }
 
-.letter_place .country:hover::-webkit-input-placeholder {
+.country:hover::-webkit-input-placeholder {
   color: #d2d2d2;
   font-family: Arial;
   font-style: normal;
@@ -106,7 +111,7 @@
   font-size: 2rem;
 }
 
-.letter_place .city {
+.city {
   position: absolute;
   transform: rotate(-2.35deg);
   width: 173.79px;
@@ -123,11 +128,11 @@
   color: #ff0000;
 }
 
-.letter_place .city::-webkit-input-placeholder {
+.city::-webkit-input-placeholder {
   color: transparent;
 }
 
-.letter_place .city:hover::-webkit-input-placeholder {
+.city:hover::-webkit-input-placeholder {
   color: #d2d2d2;
   font-family: Arial;
   font-style: normal;
@@ -135,7 +140,7 @@
   font-size: 2rem;
 }
 
-.letter_place .first {
+.first {
   position: absolute;
   width: 173.79px;
   height: 41.38px;
@@ -151,7 +156,7 @@
   color: #ff0000;
 }
 
-.letter_place .second {
+.second {
   position: absolute;
   width: 173.79px;
   height: 41.38px;
@@ -167,7 +172,7 @@
   color: #ff0000;
 }
 
-.letter_place .third {
+.third {
   position: absolute;
   width: 173.79px;
   height: 41.38px;
@@ -181,4 +186,8 @@
   font-size: 2rem;
   background-color: transparent;
   color: #ff0000;
+}
+.form_button {
+  background-color: transparent;
+  border: none;
 }
