@@ -26,7 +26,7 @@ router.route('/:id')
     try {
       const { id } = req.params
 
-      const event = await Event.findOne({ 
+      const event = await Event.findOne({
         where: { id: Number(id) },
         include: [Visitor]
       })
@@ -53,15 +53,15 @@ router.route('/add_visitor')
 
       const mailOptions = {
         from: 'maryiudina@gmail.com', // заменить на нужные значения
-        to: 'maryiudina@gmail.com', 
-        subject: 'Test',  // заголовок письма 
-        text: 'test text', 
+        to: email,
+        subject: 'Hi',  // заголовок письма 
+        text: 'this is test message',
         attachments: [{
           filename: 'passport.svg',
-          path: __dirname + '/../../client/public/passport/passportForm.svg'
+          path: __dirname + '/../../client/public/passport/passport.svg'
         }],
       }
-      
+
       transporter.sendMail(mailOptions);
 
       const new_visitor = await Visitor.create({ name, surname, patronymic, birth, event, phone, email })

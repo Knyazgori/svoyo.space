@@ -3,6 +3,7 @@ import React from 'react';
 import styles from './PhotoBlock.module.css'
 
 function PhotoBlock(props) {
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
   return (
     <>
     <div className={styles.peopleBlock}>

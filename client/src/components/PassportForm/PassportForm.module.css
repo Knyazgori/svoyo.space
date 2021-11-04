@@ -4,6 +4,7 @@
   height: 1170px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -13,6 +14,12 @@
 
 .form_block .form_block_save {
   align-self: flex-end;
+}
+
+.form_button {
+  background-color: transparent;
+  width: 260px;
+  border: none;
 }
 
 .form_block_date {
