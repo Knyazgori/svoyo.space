@@ -1,0 +1,17 @@
+#svg_about {
+  clip-path: polygon(1033px 390px, 1195px 388px, 1197px 735px, 657px 735px, 655px 579px, 1036px 571px);
+  z-index: 6;
+}
+
+#wrapper {
+  
+
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -400px; */
+  
+  /* clip-path: polygon();
+  background-color: brown; */
+}

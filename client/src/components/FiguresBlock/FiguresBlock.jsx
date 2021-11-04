@@ -17,7 +17,6 @@ function FiguresBlock(props) {
   return (
     <div className={styles.main_figures_block}>
       {/* <LinkLayer /> */}
-      <div className={styles.link_about}></div>
       <FirstRow />
       <SecondRow />
       <ThirdRow />
