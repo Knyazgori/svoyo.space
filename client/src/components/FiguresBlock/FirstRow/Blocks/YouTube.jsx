@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 
 function YouTube(props) {
   return (
-    <Link style={{ cursor: "pointer", zIndex: 5, clipPath: "polygon(0px 185px, 379px 186px, 379px 0px, 543px 0px, 543px 353px, 0px 353px)" }} to="/about">
+    <Link style={{ cursor: "pointer", zIndex: 5, clipPath: "polygon(0px 185px, 185px 185px, 183px -3px, 354px -3px, 360px 182px, 543px 188px, 543px 353px, 0px 353px)" }} to="/you_tube">
       <svg
-        style={{ zIndex: 4, marginRight: "20px" }}
+        style={{ zIndex: 6, marginRight: "20px" }}
         width="543"
         height="352"
         viewBox="0 0 543 352"

@@ -9,7 +9,7 @@ function GameField(props) {
 
   const [position, setPosition] = useState(920) // стартовая горизонтальная позиция
   const [cubeStyle, setCubeStyle] = useState(style.falling_block) // переменная стилей для управления поворотом блока 
-  const [top, setTop] = useState(-625) // начальное состояние вертикальной позиции
+  const [top, setTop] = useState(-625) // начальное состояние вертикальной позиции -625
   const [refresh, setRefresh] = useState(0) // переменная обновления игры
 
 
