@@ -63,28 +63,28 @@ function PassportForm(props) {
   useEffect(() => {
     
     // surname
-    if (surnameVal.search(/^[а-яА-ЯёЁ0-9\s]+$/) === -1) {
+    if (surnameVal.search(/^[а-яА-ЯёЁ0-9\s]*$/) === -1) {
       setSurname((prevSurname) => prevSurname = false)  
     } else {
       setSurname((prevSurname) => prevSurname = true)
     }
 
     // name
-    if (nameVal.search(/^[а-яА-ЯёЁ0-9\s]+$/) === -1) {
+    if (nameVal.search(/^[а-яА-ЯёЁ0-9\s]*$/) === -1) {
       setName((prevName) => prevName = false)
     } else {
       setName((prevName) => prevName = true)
     }
     
     // patronymic
-    if (patronymicVal.search(/^[а-яА-ЯёЁ0-9\s]+$/) === -1) {
+    if (patronymicVal.search(/^[а-яА-ЯёЁ0-9\s]*$/) === -1) {
       setPatronymic((prevPatronymic) => prevPatronymic = false)
     } else {
       setPatronymic((prevPatronymic) => prevPatronymic = true)
     }
 
     // gender
-    if (genderVal.search(/^[а-яА-ЯёЁ0-9\s]+$/) === -1) {
+    if (genderVal.search(/^[а-яА-ЯёЁ0-9\s]*$/) === -1) {
       setGender((prevGender) => prevGender = false)
     } else {
       setGender((prevGender) => prevGender = true)
@@ -98,21 +98,21 @@ function PassportForm(props) {
     // }
 
     // born
-    if (bornVal.search(/^[а-яА-ЯёЁ0-9\s]+$/) === -1) {
+    if (bornVal.search(/^[а-яА-ЯёЁ0-9\s]*$/) === -1) {
       setBorn((prevBorn) => prevBorn = false)
     } else {
       setBorn((prevBorn) => prevBorn = true)
     }
 
     // phone
-    if (phoneVal.search(/^[0-9]+$/) === -1 ) {
+    if (phoneVal.search(/^[0-9]*$/) === -1 ) {
       setPhone((prevPhone) => prevPhone = false)
     } else {
       setPhone((prevPhone) => prevPhone = true)
     }
 
     // email
-    if (emailVal.search(/^[a-zA-Z0-9@.,\s]+$/) === -1) {
+    if (emailVal.search(/^[a-zA-Z0-9@.,\s]*$/) === -1) {
       setEmail((prevEmail) => prevEmail = false)
     } else {
       setEmail((prevSurname) => prevSurname = true)

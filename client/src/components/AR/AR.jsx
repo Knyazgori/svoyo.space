@@ -14,7 +14,7 @@ function AR(props) {
         <div className={styles.wrapper}>
           <div className={styles.content}>
             <ARHeader />
-            <AR3D />
+            <AR3D /> 
             <ARGallery />
           </div>
           <Footer />

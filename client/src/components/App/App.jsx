@@ -70,6 +70,10 @@ function App() {
         <Route exact path="/logout">
           <Logout />
         </Route>
+
+
+
+        
       </Switch>
     </Router>
   );

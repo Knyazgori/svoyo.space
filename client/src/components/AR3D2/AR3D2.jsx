@@ -1,7 +1,7 @@
 import ReactThreeFbxViewer from 'react-three-fbx-viewer'
 import styles from './AR3D2.module.css'
 
-function AR3D(props) {
+function AR3D2(props) {
   return (
     <>
       <div className={styles.ar_place}>
@@ -12,10 +12,10 @@ function AR3D(props) {
           x: 20,
           y: 100, // дальность
           z: 20
-        }} url='./AR/russia.fbx' backgroundColor='#dcdcdc' near={3} far={1000} />
+        }} url='/russia.fbx' backgroundColor='#dcdcdc' near={3} far={1000} />
       </div>
     </>
   );
 }
 
-export default AR3D;
+export default AR3D2;

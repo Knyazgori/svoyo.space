@@ -20,6 +20,9 @@
   background-color: transparent;
   width: 260px;
   border: none;
+  cursor: pointer;
+  align-self: flex-end;
+
 }
 
 .form_block_date {
