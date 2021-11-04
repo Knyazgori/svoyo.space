@@ -7,6 +7,7 @@ import styles from './LetterFormAnimation.module.css'
 
 
 function LetterFormAnimation(props) {
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
   const user = useRef()
   const nickname = useRef()
   const city = useRef()
