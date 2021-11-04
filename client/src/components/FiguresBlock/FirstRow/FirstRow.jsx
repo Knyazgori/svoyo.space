@@ -154,7 +154,6 @@ function FirstRow(props) {
       </svg>
       {/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// О НАС */}
       <Link style={{ cursor: "pointer", zIndex: 1 }} to="/about">
-        <div className={style.link_about}></div>
         <svg
           style={{ display: "block", zIndex: 2, cursor: "pointer" }} // о нас
           width="543"
