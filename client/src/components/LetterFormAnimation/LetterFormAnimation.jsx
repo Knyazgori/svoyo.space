@@ -7,39 +7,6 @@ import styles from './LetterFormAnimation.module.css'
 
 
 function LetterFormAnimation(props) {
-  //  const user = useRef()
-  //  const nickname = useRef()
-  //  const city = useRef()
-  //  const country = useRef()
-
-  //  const first = useRef()
-  //  const second = useRef()
-  //  const third = useRef()
-
-  //  const [state, setState] = useState({ show: true })
-  //  const [stateSecond, setStateSecond] = useState({ showSecond: true })
-
-
-  //  const handleClick = () => {
-  //    setState({ show: !state.show });
-  //    setStateSecond({ showSecond: !stateSecond.showSecond });
-  //  }
-
-  //  const handlerSubmit = async (event) => {
-  //    event.preventDefault();
-
-  //  const response = fetch('http:localhost:5000/words', {
-  //    method: 'POST',
-  //    credentials: 'include',
-  //    headers: {
-  //      'Content-type': 'application/json'
-  //    },
-  //    body: JSON.stringify({ first: first.current.value, second: second.current.value, third: third.current.value, user: user.current.value, nickname: nickname.current.value, city: city.current.value, country: country.current.value }),
-  //  })
-  //  const data = await response
-  //  console.log(data.ok);
-  //  })
-
   return (
     <>
       <svg className={styles.letter} width="1728" height="833" viewBox="0 0 1728 833" fill="none" xmlns="http:www.w3.org/2000/svg">
