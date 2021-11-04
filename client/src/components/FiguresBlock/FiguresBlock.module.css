@@ -3,7 +3,14 @@
   stroke: solid red;
 }
 
-
+.link_about {
+  height: 167px;
+  width: 167px;
+  border: 1px solid rgb(255, 0, 255);
+  margin-top: 987px;
+  margin-left: 180px;
+  z-index: 6;
+}
 /* .first {
 
 } */

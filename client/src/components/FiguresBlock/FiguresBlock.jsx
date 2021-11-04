@@ -1,6 +1,7 @@
 
 import React from 'react';
 import GameField from '../GameField/GameField.jsx';
+import LinkLayer from '../LinkLayer/LinkLayer.jsx';
 
 
 import styles from "./FiguresBlock.module.css";
@@ -15,7 +16,8 @@ function FiguresBlock(props) {
 
   return (
     <div className={styles.main_figures_block}>
-
+      {/* <LinkLayer /> */}
+      <div className={styles.link_about}></div>
       <FirstRow />
       <SecondRow />
       <ThirdRow />

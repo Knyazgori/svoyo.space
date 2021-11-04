@@ -1,5 +1,8 @@
-li {  
-  list-style-type: none
+.linkss {  
+  list-style-type: none;
+  text-decoration: none;
+  color: #ff0000;
+
 }
 
 .footer {
