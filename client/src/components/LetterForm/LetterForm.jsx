@@ -60,13 +60,14 @@ function LetterForm(props) {
           <div className={styles.letter_place}>
             <LetterFormAnimation />
             <form className={styles.save} onSubmit={handlerSubmit}>
-              <input name='user' ref={user} className={styles.name} placeholder='имя' autofocus="off" type="string" />
-              <input name='nickname' ref={nickname} className={styles.nickname} placeholder='ник в инсте' autofocus="off" type="string" />
-              <input name='country' ref={country} className={styles.country} placeholder='страна' autofocus="off" type="string" />
-              <input name='city' ref={city} className={styles.city} placeholder='город' autofocus="off" type="string" />
-              <input name='first' ref={first} className={styles.first} autofocus="off" type="text" />
-              <input name='second' ref={second} className={styles.second} autofocus="off" type="text" />
-              <input name='third' ref={third} className={styles.third} autofocus="off" type="text" />
+              <input name='user' ref={user} className={styles.name} placeholder='имя' autocomplete="off" type="string" />
+              <input name='nickname' ref={nickname} className={styles.nickname} placeholder='ник в инсте' autocomplete="off" type="string" />
+              <input name='country' ref={country} className={styles.country} placeholder='страна' autocomplete="off" type="string" />
+              <input name='city' ref={city} className={styles.city} placeholder='город' autocomplete="off" type="string" />
+              <input name='first' ref={first} className={styles.first} autocomplete="off" type="text" />
+              <input name='second' ref={second} className={styles.second} autocomplete="off" type="text" />
+              <input name='third' ref={third} className={styles.third} autocomplete="off" type="text" />
+              
               <button className={styles.form_button} onClick={handleClick}>
                 <svg width="238" height="59" viewBox="0 0 238 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.24121 22.5615C1.24121 18.2669 2.13917 15.0265 3.93508 12.8401C5.7466 10.6538 8.03444 9.56065 10.7986 9.56065C13.5159 9.56065 15.7881 10.6538 17.6152 12.8401C19.4424 15.0265 20.3559 18.181 20.3559 22.3038C20.3559 26.7702 19.458 30.0965 17.6621 32.2828C15.8662 34.4692 13.5783 35.5623 10.7986 35.5623C8.06567 35.5623 5.78565 34.4692 3.9585 32.2828C2.14697 30.0809 1.24121 26.8404 1.24121 22.5615ZM4.77837 22.5615C4.77837 25.7785 5.364 28.1757 6.53524 29.7529C7.70649 31.3146 9.15884 32.0954 10.8923 32.0954C12.5164 32.0954 13.9063 31.3068 15.0619 29.7295C16.2332 28.1366 16.8188 25.7473 16.8188 22.5615C16.8188 19.3601 16.2332 16.9785 15.0619 15.4169C13.8907 13.8396 12.4383 13.051 10.7049 13.051C9.06514 13.051 7.66745 13.8396 6.51182 15.4169C5.35619 16.9942 4.77837 19.3757 4.77837 22.5615Z" fill="#FF0000" />
@@ -85,7 +86,6 @@ function LetterForm(props) {
             </form>
           </div>
         </Fade>
-
       </Fade>
     </>
   );
