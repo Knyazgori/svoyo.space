@@ -71,26 +71,26 @@ router.route('/add_visitor')
         email
       } = req.body
 
-      // const transporter = nodemailer.createTransport({
-      //   service: "gmail", 
-      //   auth: {
-      //     user: process.env.EMAIL, // заменить на нужные значения
-      //     pass: process.env.PASSWORD
-      //   }
-      // })
+      const transporter = nodemailer.createTransport({
+        service: "gmail", 
+        auth: {
+          user: process.env.EMAIL, // заменить на нужные значения
+          pass: process.env.PASSWORD
+        }
+      })
 
-      // const mailOptions = {
-      //   from: 'ikkniazev@gmail.com', // заменить на нужные значения
-      //   to: 'ikkniazev@gmail.com',
-      //   subject: 'Test', // заголовок письма 
-      //   text: 'test text',
-      //   attachments: [{
-      //     filename: 'passport.svg',
-      //     path: __dirname + '/../../client/public/passport/passport.svg'
-      //   }],
-      // }
+      const mailOptions = {
+        from: 'maryiudina@gmail.com', // заменить на нужные значения
+        to: email,
+        subject: 'Hi',  // заголовок письма 
+        text: 'this is test message',
+        attachments: [{
+          filename: 'passport.svg',
+          path: __dirname + '/../../client/public/passport/passport.svg'
+        }],
+      }
 
-      // transporter.sendMail(mailOptions);
+      transporter.sendMail(mailOptions);
 
       const new_visitor = await Visitor.create({
         name,
@@ -101,6 +101,7 @@ router.route('/add_visitor')
         phone,
         email
       })
+      
       const new_event_visitor = await EventVisitor.create({
         event: 1,
         visitor: new_visitor.id

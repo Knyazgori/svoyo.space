@@ -121,7 +121,7 @@ function PassportForm(props) {
 
   return (
     <form className={styles.form_block} onSubmit={handlerSubmit}>
-      <svg className={styles.form_block_passport} width="1490" height="1031" viewBox="0 0 1490 1031" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className={styles.form_block_passport} width="1490" height="1031" viewBox="0 0 1490 1031" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="1" y="1" width="1487.06" height="1028.15" rx="19.0418" fill="white" stroke="#FF0000" stroke-width="2" />
         <rect x="73.0527" y="180.041" width="406.291" height="543.138" fill="white" stroke="#FF0000" stroke-width="2" />
         <line x1="701.836" y1="199.007" x2="1299.6" y2="199.007" stroke="#FF0101" stroke-width="2" />
@@ -356,7 +356,7 @@ function PassportForm(props) {
         <p ref={eventName} className={styles.form_block_info_p1}>СВОЯ_ТУСОВКА_12: 30_01/01/22_НАБЕРЕЖНАЯ_КАНАЛА_ГРИБОЕДОВА_123_ЕЩЕ_ТУ<br />Т_БУДУТ_ПРИКОЛЫ_НО_ПОКА_ОБОЙДЕТЕСЬ_БЕЗ_ПРИКОЛО<br />В_НИКАКИХ_ПРИКОЛОВ_ЗАПРЕЩАЮ_ПРИКОЛЫ</p>
       </div>
 
-      <button>
+      <button className={styles.form_button}>
         <svg className={styles.form_block_save} width="250" height="59" viewBox="0 0 250 59" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M249.241 50.3408L235.926 42.6287L235.905 58.0164L249.241 50.3408ZM0.99817 51.3326L237.246 51.657L237.25 48.9917L1.00183 48.6674L0.99817 51.3326Z" fill="#FF0000" />
           <path d="M17.4239 28.7507L21.3025 29.3647C20.8567 32.746 19.7332 35.3266 17.9321 37.1062C16.1488 38.8859 14 39.7758 11.4856 39.7758C8.43621 39.7758 5.92181 38.53 3.94239 36.0384C1.9808 33.5291 1 29.8274 1 24.9333C1 20.0036 1.98971 16.3107 3.96914 13.8548C5.96639 11.381 8.52538 10.1442 11.6461 10.1442C14.0535 10.1442 16.0775 10.8916 17.7181 12.3865C19.3765 13.8815 20.4376 16.1239 20.9012 19.1137L17.0761 19.8345C16.7016 17.9124 16.0508 16.4798 15.1235 15.5366C14.1962 14.5755 13.0816 14.095 11.7798 14.095C9.83608 14.095 8.22222 14.9582 6.93827 16.6845C5.67215 18.393 5.03909 21.1159 5.03909 24.8532C5.03909 28.7151 5.6454 31.5092 6.85802 33.2355C8.08848 34.9617 9.65775 35.8249 11.5658 35.8249C13.0638 35.8249 14.3388 35.2554 15.3909 34.1164C16.4609 32.9596 17.1385 31.171 17.4239 28.7507Z" fill="#FF0000" />
