@@ -70,6 +70,18 @@ function App() {
         <Route exact path="/logout">
           <Logout />
         </Route>
+        <Route exact path="/telegram" component={() => {
+          window.location.href = 'https://t.me/make_russia_great_again'; 
+          return null;
+        }} />
+        <Route exact path="/you_tube" component={() => {
+          window.location.href = 'https://www.youtube.com/'; 
+          return null;
+        }} />
+        <Route exact path="/instagram" component={() => {
+          window.location.href = 'https://www.instagram.com/svoyo.space/'; 
+          return null;
+        }} />
       </Switch>
     </Router>
   );

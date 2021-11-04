@@ -18,7 +18,8 @@ function FirstRow(props) {
         justifyContent: "space-between",
         position: "absolute",
         bottom: "-400px",
-        zIndex: 6
+        zIndex: 6,
+        clipPath: 'polygon(0px 0px, 1485px 0px, 1486px 177px, 1686px 177px, 1687px 0px, 1857px 0px, 1857px 356px, 0px 356px)'
       }}
     >
       <ThreeWordsAboutRussia />
