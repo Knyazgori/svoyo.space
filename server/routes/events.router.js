@@ -80,7 +80,7 @@ router.route('/add_visitor')
       })
 
       const mailOptions = {
-        from: 'maryiudina@gmail.com', // заменить на нужные значения
+        from: 'svoyo.spacee@gmail.com', // заменить на нужные значения
         to: email,
         subject: 'Hi',  // заголовок письма 
         text: 'this is test message',

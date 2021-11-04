@@ -2,20 +2,11 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
   margin-top: 70px;
   width: 1728px;
   height: 872px;
   color: #ff0000;
-}
-
-.letter {
-  align-self: center;
-}
-
-.letter {
-  align-self: center;
-  transform: translateX(-100%);
 }
 
 .save {
@@ -187,6 +178,8 @@
   background-color: transparent;
   color: #ff0000;
 }
+
+
 .form_button {
   background-color: transparent;
   border: none;
