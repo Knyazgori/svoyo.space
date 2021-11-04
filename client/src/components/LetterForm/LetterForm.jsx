@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 
 import Fade from 'react-reveal/Fade';
 import LetterFormAnimation from '../LetterFormAnimation/LetterFormAnimation';
@@ -8,7 +8,13 @@ import styles from './LetterForm.module.css'
 
 
 function LetterForm(props) {
-  document.body.scrollTop = document.documentElement.scrollTop = 0;
+  useEffect(() => {
+    window.scroll({
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth'
+    });
+  }, []);
 
   const user = useRef()
   const nickname = useRef()
@@ -29,6 +35,7 @@ function LetterForm(props) {
   }
 
   const handlerSubmit = async (event) => {
+    document.body.scrollTop = document.documentElement.scrollTop  = document.documentElement.scrollHeight
     event.preventDefault();
 
     const response = fetch('http://localhost:5000/words', {
@@ -41,6 +48,7 @@ function LetterForm(props) {
     })
     const data = await response
     console.log(data.ok);
+
     setTimeout(() => window.location.href = '/', 1500);
 
   }
