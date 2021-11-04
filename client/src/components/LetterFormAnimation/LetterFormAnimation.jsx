@@ -7,7 +7,6 @@ import styles from './LetterFormAnimation.module.css'
 
 
 function LetterFormAnimation(props) {
-  document.body.scrollTop = document.documentElement.scrollTop = 0;
   return (
     <>
       <svg className={styles.letter} width="1728" height="833" viewBox="0 0 1728 833" fill="none" xmlns="http:www.w3.org/2000/svg">
