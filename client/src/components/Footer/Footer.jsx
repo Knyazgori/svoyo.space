@@ -21,9 +21,9 @@ function Footer(props) {
               <li className={styles.linkss}>ютуб</li>
             </div>
             <div className={styles.email}>
-              <a target="_blank" rel="noreferrer" className={styles.links} href="https://t.me/make_russia_great_again"><li>@make_russia_great_again</li></a>
-              <a target="_blank" rel="noreferrer" className={styles.links} href="https://www.instagram.com/svoyo.space/"><li>@svoyo.space</li></a>
-              <a target="_blank" rel="noreferrer" className={styles.links} href="https://svoyo.space/"><li>svoyo.space</li></a>
+              <a target="_blank" rel="noreferrer" className={styles.linkss} href="https://t.me/make_russia_great_again"><li>@make_russia_great_again</li></a>
+              <a target="_blank" rel="noreferrer" className={styles.linkss} href="https://www.instagram.com/svoyo.space/"><li>@svoyo.space</li></a>
+              <a target="_blank" rel="noreferrer" className={styles.linkss} href="https://svoyo.space/"><li>svoyo.space</li></a>
               <li className={styles.linkss}>svoyo.space@gmail.com</li>
             </div>
             <div className={styles.people}>
