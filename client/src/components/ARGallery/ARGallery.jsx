@@ -11,21 +11,27 @@ function ARGallery(props) {
       <div className={styles.gallery}>
         <div className={styles.gallery_video_block}>
           {/* <svg width="925" height="634" viewBox="0 0 925 634" fill="none" xmlns="http://www.w3.org/2000/svg"> */}
-          <div className={styles.video_container_first}>
+          {/* <div className={styles.video_container_first}> */}
             <div className={styles.video_1}><iframe width="311" height="553" src="https://www.youtube.com/embed/Y6aFD4yqlLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div className={styles.video_2}><iframe width="311" height="553" src="https://www.youtube.com/embed/Y6aFD4yqlLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div className={styles.video_3}><iframe width="311" height="553" src="https://www.youtube.com/embed/Y6aFD4yqlLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          </div>
+            <div className={styles.video_qr_1}></div>
+            <div className={styles.video_qr_2}></div>
+            <div className={styles.video_qr_3}></div>
+          {/* </div> */}
           {/* <rect y="370" width="120" height="120" fill="#FF0000" />
           <rect x="271" y="61" width="120" height="120" fill="#FF0000" />
           <rect x="782" y="505" width="120" height="120" fill="#FF0000" /> */}
           {/* </svg> */}
           {/*  */}
-          <div className={styles.video_container_second}>
+          {/* <div className={styles.video_container_second}> */}
             <div className={styles.video_4}><iframe width="311" height="553" src="https://www.youtube.com/embed/Y6aFD4yqlLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div className={styles.video_5}><iframe width="311" height="553" src="https://www.youtube.com/embed/Y6aFD4yqlLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div className={styles.video_6}><iframe width="311" height="553" src="https://www.youtube.com/embed/Y6aFD4yqlLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          </div>
+            <div className={styles.video_qr_4}></div>
+            <div className={styles.video_qr_5}></div>
+            <div className={styles.video_qr_6}></div>
+          {/* </div> */}
           {/* <svg width="923" height="625" viewBox="0 0 923 625" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="12.1176" y="76.3559" width="309" height="551" transform="rotate(-7.20896 12.1176 76.3559)" fill="white" stroke="#FF0000" stroke-width="2" />
             <rect x="348.705" y="1.10946" width="309" height="551" transform="rotate(6.675 348.705 1.10946)" fill="white" stroke="#FF0000" stroke-width="2" />
@@ -35,11 +41,14 @@ function ARGallery(props) {
             <rect x="803" y="103" width="120" height="120" fill="#FF0000" />
           </svg> */}
           {/*  */}
-          <div className={styles.video_container_third}>
+          {/* <div className={styles.video_container_third}> */}
             <div className={styles.video_7}><iframe width="311" height="553" src="https://www.youtube.com/embed/Y6aFD4yqlLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div className={styles.video_8}><iframe width="311" height="553" src="https://www.youtube.com/embed/Y6aFD4yqlLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div className={styles.video_9}><iframe width="311" height="553" src="https://www.youtube.com/embed/Y6aFD4yqlLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          </div>
+            <div className={styles.video_qr_7}></div>
+            <div className={styles.video_qr_8}></div>
+            <div className={styles.video_qr_9}></div>
+          {/* </div> */}
           {/* <svg width="921" height="637" viewBox="0 0 921 637" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="89.6632" y="30.147" width="309" height="551" transform="rotate(9.20071 89.6632 30.147)" fill="white" stroke="#FF0000" stroke-width="2" />
             <rect x="292.663" y="26.1636" width="309" height="551" transform="rotate(-4.49739 292.663 26.1636)" fill="white" stroke="#FF0000" stroke-width="2" />
@@ -49,11 +58,14 @@ function ARGallery(props) {
             <rect x="801" y="517" width="120" height="120" fill="#FF0000" />
           </svg> */}
           {/*  */}
-          <div className={styles.video_container_forth}>
+          {/* <div className={styles.video_container_forth}> */}
             <div className={styles.video_10}><iframe width="311" height="553" src="https://www.youtube.com/embed/Y6aFD4yqlLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div className={styles.video_11}><iframe width="311" height="553" src="https://www.youtube.com/embed/Y6aFD4yqlLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div className={styles.video_12}><iframe width="311" height="553" src="https://www.youtube.com/embed/Y6aFD4yqlLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          </div>
+            <div className={styles.video_qr_10}></div>
+            <div className={styles.video_qr_11}></div>
+            <div className={styles.video_qr_12}></div>
+          {/* </div> */}
           {/* <svg width="961" height="631" viewBox="0 0 961 631" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="1.82568" y="88.8634" width="309" height="551" transform="rotate(-12.2163 1.82568 88.8634)" fill="white" stroke="#FF0000" stroke-width="2" />
             <rect x="347.803" y="1.56996" width="309" height="551" transform="rotate(4.28418 347.803 1.56996)" fill="white" stroke="#FF0000" stroke-width="2" />
@@ -63,11 +75,14 @@ function ARGallery(props) {
             <rect x="814" y="288" width="120" height="120" fill="#FF0000" />
           </svg> */}
           {/*  */}
-          <div className={styles.video_container_fifth}>
+          {/* <div className={styles.video_container_fifth}> */}
             <div className={styles.video_13}><iframe width="311" height="553" src="https://www.youtube.com/embed/Y6aFD4yqlLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div className={styles.video_14}><iframe width="311" height="553" src="https://www.youtube.com/embed/Y6aFD4yqlLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div className={styles.video_15}><iframe width="311" height="553" src="https://www.youtube.com/embed/Y6aFD4yqlLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          </div>
+            <div className={styles.video_qr_13}></div>
+            <div className={styles.video_qr_14}></div>
+            <div className={styles.video_qr_15}></div>
+          {/* </div> */}
           {/* <svg width="944" height="619" viewBox="0 0 944 619" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="118.399" y="13.4843" width="309" height="551" transform="rotate(12.2124 118.399 13.4843)" fill="white" stroke="#FF0000" stroke-width="2" />
             <rect x="328.18" y="1.56752" width="309" height="551" transform="rotate(0.288491 328.18 1.56752)" fill="white" stroke="#FF0000" stroke-width="2" />
@@ -77,11 +92,14 @@ function ARGallery(props) {
             <rect x="824" y="94" width="120" height="120" fill="#FF0000" />
           </svg> */}
           {/*  */}
-          <div className={styles.video_container_sixth}>
+          {/* <div className={styles.video_container_sixth}> */}
             <div className={styles.video_16}><iframe width="311" height="553" src="https://www.youtube.com/embed/Y6aFD4yqlLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div className={styles.video_17}><iframe width="311" height="553" src="https://www.youtube.com/embed/Y6aFD4yqlLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div className={styles.video_18}><iframe width="311" height="553" src="https://www.youtube.com/embed/Y6aFD4yqlLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          </div>
+            <div className={styles.video_qr_16}></div>
+            <div className={styles.video_qr_17}></div>
+            <div className={styles.video_qr_18}></div>
+          {/* </div> */}
           {/* <svg width="938" height="640" viewBox="0 0 938 640" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="1.70299" y="97.2293" width="309" height="551" transform="rotate(-10.8083 1.70299 97.2293)" fill="white" stroke="#FF0000" stroke-width="2" />
             <rect x="375.578" y="1.56631" width="309" height="551" transform="rotate(10.8816 375.578 1.56631)" fill="white" stroke="#FF0000" stroke-width="2" />
@@ -116,15 +134,15 @@ function ARGallery(props) {
           <h2 className={styles.text_title}>ХАКАСИЯ</h2>
           <p className={styles.text_descr}>Загадки древности под<br />палящим степным солнцем и в<br />ледяных морозах Сибири —<br />серия фильтров,<br />раскрывающих особенности<br />Хакасии от Надя Найденкиной</p>
         </div> */}
-          <img src="../../../AR/text.1.svg" alt="svg" />
-          <img src="../../../AR/text.2.svg" alt="svg" />
-          <img src="../../../AR/text.3.svg" alt="svg" />
-          <img src="../../../AR/text.4.svg" alt="svg" />
-          <img src="../../../AR/text.5.svg" alt="svg" />
-          <img src="../../../AR/text.6.svg" alt="svg" />
+          <img className={styles.img_1} src="../../../AR/text.1.svg" alt="svg" />
+          <img className={styles.img_2} src="../../../AR/text.2.svg" alt="svg" />
+          <img className={styles.img_3} src="../../../AR/text.3.svg" alt="svg" />
+          <img className={styles.img_4} src="../../../AR/text.4.svg" alt="svg" />
+          <img className={styles.img_5} src="../../../AR/text.5.svg" alt="svg" />
+          <img className={styles.img_6} src="../../../AR/text.6.svg" alt="svg" />
         </div>
-        <div className={styles.gallery_qr_block}>
-          <div className={styles.qr_list}>
+        {/* <div className={styles.gallery_qr_block}> */}
+          <div className={styles.qr_list_1}>
             <ol className={styles.qr_ol}>
               <li>Открой второй фильтр</li>
               <li>Наведи камеру на картинку</li>
@@ -133,29 +151,31 @@ function ARGallery(props) {
             <img src="../../../AR/1.1.png" alt="" />
             <p className={styles.qr_p}>ИЩИТЕ СТИКЕР НА ВСЕХ<br />УЛИЦАХ ПЕТЕРБУРГА</p>
           </div>
-          <div className={styles.qr_block}>
+          <div className={styles.qr_block_2}>
             <img src="../../../AR/1.2.png" alt="" />
             <p className={styles.qr_p}>ИЩИТЕ СТИКЕР НА ВСЕХ<br />УЛИЦАХ ПЕТЕРБУРГА</p>
           </div>
-          <div className={styles.qr_block}>
+          <div className={styles.qr_block_3}>
             <img src="../../../AR/1.3.png" alt="" />
             <p className={styles.qr_p}>ИЩИТЕ СТИКЕР НА ВСЕХ<br />УЛИЦАХ ПЕТЕРБУРГА</p>
           </div>
-          <div className={styles.qr_block}>
+          <div className={styles.qr_block_4}>
             <img src="../../../AR/1.4.png" alt="" />
             <p className={styles.qr_p}>ИЩИТЕ СТИКЕР НА ВСЕХ<br />УЛИЦАХ ПЕТЕРБУРГА</p>
           </div>
-          <div className={styles.qr_block}>
+          <div className={styles.qr_block_5}>
             <img src="../../../AR/1.5.png" alt="" />
             <p className={styles.qr_p}>ИЩИТЕ СТИКЕР НА ВСЕХ<br />УЛИЦАХ ПЕТЕРБУРГА</p>
           </div>
-          <div className={styles.qr_block}>
+          <div className={styles.qr_block_6}>
             <img src="../../../AR/1.6.png" alt="" />
             <p className={styles.qr_p}>ИЩИТЕ СТИКЕР НА ВСЕХ<br />УЛИЦАХ ПЕТЕРБУРГА</p>
           </div>
+        {/* </div> */}
+        <div className={styles.hse_block}>
+          <p className={styles.hse_text}></p>
         </div>
       </div>
-      <p></p>
     </div>
 
   );
