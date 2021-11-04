@@ -6,6 +6,8 @@ import YouTube from "./Blocks/YouTube";
 import './FirstRow.css'
 
 function FirstRow(props) {
+
+  console.log('Тестовый лог перфект тетрис 1.7');
   return (
     <div
       // className={style.wrapper}
@@ -16,6 +18,7 @@ function FirstRow(props) {
         justifyContent: "space-between",
         position: "absolute",
         bottom: "-400px",
+        zIndex: 6
       }}
     >
       <ThreeWordsAboutRussia />
