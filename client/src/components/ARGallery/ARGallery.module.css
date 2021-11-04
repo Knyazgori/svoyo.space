@@ -63,12 +63,13 @@
 }
 
 .video_1 {
+  position: absolute;
   width: 311px;
   height: 553px;
   transform: rotate(9.99deg);
   z-index: 0;
-  /* left: 121.97px;
-  top: 1450px; */
+  left: 121.97px;
+  top: 1450px;
 }
 .video_2 {
   width: 311px;
@@ -83,9 +84,10 @@
   z-index: 2;
 }
 .video_container_first {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; */
+  position: relative;
   width: 924.93px;
   height: 633.58px;
   position: relative;

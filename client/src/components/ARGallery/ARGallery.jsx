@@ -16,7 +16,6 @@ function ARGallery(props) {
             <div className={styles.video_2}><iframe width="311" height="553" src="https://www.youtube.com/embed/Y6aFD4yqlLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div className={styles.video_3}><iframe width="311" height="553" src="https://www.youtube.com/embed/Y6aFD4yqlLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
           </div>
-
           {/* <rect y="370" width="120" height="120" fill="#FF0000" />
           <rect x="271" y="61" width="120" height="120" fill="#FF0000" />
           <rect x="782" y="505" width="120" height="120" fill="#FF0000" /> */}
