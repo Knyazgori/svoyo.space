@@ -85,3 +85,12 @@
     top: 520px;
   }
 }
+
+
+.controller_block {
+  width: 401px;
+  height: 83px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
