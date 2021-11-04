@@ -16,6 +16,7 @@ import About from '../About/About';
 import Letter from '../Letter/Letter';
 import Passport from '../Passport/Passport';
 import AR from '../AR/AR';
+import InputRules from '../InputRules/InputRules';
 
 
 function App() {
@@ -59,6 +60,9 @@ function App() {
         </Route>
         <Route exact path='/ar'>
           <AR />
+        </Route>
+        <Route exact path='/rules'>
+          <InputRules />
         </Route>
         <Route exact path="/login">
           <Login />
