@@ -179,8 +179,13 @@
   color: #ff0000;
 }
 
+.flex_btn {
+  display: flex;
+  justify-content: flex-end;
+}
 
 .form_button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }

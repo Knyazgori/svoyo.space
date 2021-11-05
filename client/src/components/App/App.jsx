@@ -17,6 +17,7 @@ import Letter from '../Letter/Letter';
 import Passport from '../Passport/Passport';
 import AR from '../AR/AR';
 import InputRules from '../InputRules/InputRules';
+import Slider from '../LetterForm/Slider';
 
 
 function App() {
@@ -55,6 +56,9 @@ function App() {
         <Route exact path='/russia'>
           <Letter />
         </Route>
+        <Route exact path='/slider'>
+          <Slider />
+        </Route>
         <Route exact path='/passport'>
           <Passport />
         </Route>
@@ -82,7 +86,6 @@ function App() {
           window.location.href = 'https://www.instagram.com/svoyo.space/';
           return null;
         }} />
-
       </Switch>
     </Router>
   );
