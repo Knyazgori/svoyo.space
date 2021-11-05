@@ -7,7 +7,7 @@ function ThreeWordsAboutRussia(props) {
   return (
     <Link style={{ alignSelf: "flex-end", cursor: "pointer", width: "730px", height: "165px", marginRight: "20px", backgroundColor: 'transparent' }} to="/russia">
         <svg
-          className={styles.svg_1}
+          // className={styles.svg_1}
           style={{ zIndex: "2" }} // 3 слова
           width="732"
           height="163"

@@ -35,10 +35,8 @@ function AR3D(props) {
         <div className={styles.ar_place_model}>
           <Canvas>
             <Suspense fallback={null}>
-              <Scene />
+              <Scene position={[10, 15, 10]}/>
               <OrbitControls />
-              {/* <cameraPosition /> */}
-              {/* <Environment preset="sunset" background /> */}
               <spotLight position={[10, 15, 10]} angle={0.3} />
               <ambientLight intensity={0.5} />
             </Suspense>

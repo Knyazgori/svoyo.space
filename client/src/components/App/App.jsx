@@ -18,6 +18,7 @@ import Passport from '../Passport/Passport';
 import AR from '../AR/AR';
 import InputRules from '../InputRules/InputRules';
 import Slider from '../LetterForm/Slider';
+import Example from '../Example/Example';
 
 
 function App() {
@@ -64,6 +65,9 @@ function App() {
         </Route>
         <Route exact path='/ar'>
           <AR />
+        </Route>
+        <Route exact path='/example'>
+          <Example />
         </Route>
         <Route exact path='/rules'>
           <InputRules />
