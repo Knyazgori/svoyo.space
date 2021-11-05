@@ -1,4 +1,5 @@
 import React from 'react';
+import AR3D from '../AR3D/AR3D.jsx';
 
 import AR3D from '../AR3D/AR3D.jsx';
 import ARGallery from '../ARGallery/ARGallery';
