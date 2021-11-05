@@ -17,7 +17,7 @@ import Letter from '../Letter/Letter';
 import Passport from '../Passport/Passport';
 import AR from '../AR/AR';
 import InputRules from '../InputRules/InputRules';
-import Slider from '../Slider/Slider';
+import Slider from '../LetterForm/Slider';
 
 
 function App() {

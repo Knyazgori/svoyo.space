@@ -12,9 +12,9 @@
 .slider_img {
   position: absolute;
   width: 100%;
-  left: 75px;
-  height: 872px;
-  transition: all 1s;
+  /* height: 500px; */
+  transition: all 1.5s;
+  /* transform: rotate(-2.35deg); */
 }
 
 .slider_img_prev {
