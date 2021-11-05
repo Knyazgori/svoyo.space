@@ -12,7 +12,7 @@ function AR3D2(props) {
           x: 20,
           y: 100, // дальность
           z: 20
-        }} url='/russia.fbx' backgroundColor='#dcdcdc' near={3} far={1000} />
+        }} url="/AR/russia.fbx' backgroundColor='#dcdcdc" near={3} far={1000} />
       </div>
     </>
   );

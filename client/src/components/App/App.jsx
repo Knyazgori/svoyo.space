@@ -57,7 +57,7 @@ function App() {
           <Letter />
         </Route>
         <Route exact path='/slider'>
-          <Slider />
+          {/* <Slider /> */}
         </Route>
         <Route exact path='/passport'>
           <Passport />

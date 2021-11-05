@@ -14,3 +14,7 @@
 /* .first {
 
 } */
+
+.red:hover {
+  background-color: red;
+}
