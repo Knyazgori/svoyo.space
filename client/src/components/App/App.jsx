@@ -79,11 +79,19 @@ function App() {
           return null;
         }} />
         <Route exact path="/you_tube" component={() => {
-          window.location.href = 'https://www.youtube.com/';
+          window.location.href = 'https://www.youtube.com/watch?v=hbe3CQamF8k&ab_channel=MassiveAttackVEVO';
           return null;
         }} />
         <Route exact path="/instagram" component={() => {
           window.location.href = 'https://www.instagram.com/svoyo.space/';
+          return null;
+        }} />
+        <Route exact path="/samisdat" component={() => {
+          window.location.href = 'https://samizdat.svoyo.space/';
+          return null;
+        }} />
+        <Route exact path="/archive" component={() => {
+          window.location.href = 'https://svoyo.space';
           return null;
         }} />
       </Switch>

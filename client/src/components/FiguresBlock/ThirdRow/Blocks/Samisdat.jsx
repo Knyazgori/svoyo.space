@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Samisdat(props) {
   return (
-    <Link style={{ cursor: "pointer", zIndex: 23, clipPath: "polygon(0px 172px, 0px 0px, 543px 0px, 543px 356px, 376px 358px, 375px 169px)" }} to="/ar">
+    <Link style={{ cursor: "pointer", zIndex: 23, clipPath: "polygon(0px 172px, 0px 0px, 543px 0px, 543px 356px, 376px 358px, 375px 169px)" }} to="/samisdat">
       <svg
         style={{ alignSelf: "flex-end", zIndex: 10 }}
         width="543"
