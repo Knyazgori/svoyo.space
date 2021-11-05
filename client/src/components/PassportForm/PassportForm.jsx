@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 
 import styles from './PassportForm.module.css'
 
@@ -14,7 +14,7 @@ function PassportForm(props) {
   // patronymic state
   const [patronymicInput, setPatronymic] = useState(true)
   const [patronymicVal, setValPatronymic] = useState('')
-  
+
   // gender state
   const [genderInput, setGender] = useState(true)
   const [genderVal, setValGender] = useState('')
@@ -22,7 +22,7 @@ function PassportForm(props) {
   // birth state
   const [birthInput, setBirth] = useState(true)
   const [birthVal, setValBirth] = useState()
-  
+
   // born state
   const [bornInput, setBorn] = useState(true)
   const [bornVal, setValBorn] = useState('')
@@ -34,7 +34,7 @@ function PassportForm(props) {
   // email state
   const [emailInput, setEmail] = useState(true)
   const [emailVal, setValEmail] = useState('')
-  
+
 
   const eventName = useRef()
   const surname = useRef()
@@ -61,10 +61,10 @@ function PassportForm(props) {
   }
 
   useEffect(() => {
-    
+
     // surname
     if (surnameVal.search(/^[а-яА-ЯёЁ0-9\s]*$/) === -1) {
-      setSurname((prevSurname) => prevSurname = false)  
+      setSurname((prevSurname) => prevSurname = false)
     } else {
       setSurname((prevSurname) => prevSurname = true)
     }
@@ -75,7 +75,7 @@ function PassportForm(props) {
     } else {
       setName((prevName) => prevName = true)
     }
-    
+
     // patronymic
     if (patronymicVal.search(/^[а-яА-ЯёЁ0-9\s]*$/) === -1) {
       setPatronymic((prevPatronymic) => prevPatronymic = false)
@@ -89,7 +89,7 @@ function PassportForm(props) {
     } else {
       setGender((prevGender) => prevGender = true)
     }
-    
+
     // // birth
     // if (birthVal.search(/^[0-9]*$/) === -1 ) {
     //   setBirth((prevBirth) => prevBirth = false)
@@ -105,7 +105,7 @@ function PassportForm(props) {
     }
 
     // phone
-    if (phoneVal.search(/^[0-9]*$/) === -1 ) {
+    if (phoneVal.search(/^[0-9]*$/) === -1) {
       setPhone((prevPhone) => prevPhone = false)
     } else {
       setPhone((prevPhone) => prevPhone = true)
@@ -122,24 +122,27 @@ function PassportForm(props) {
 
   const handlerSubmit = async (event) => {
     event.preventDefault();
-
-    
-      const response = fetch('http://localhost:5000/event/add_visitor', {
-        method: 'POST',
-        credentials: 'include',
-        headers: {
-          'Content-type': 'application/json'
-        },
-        body: JSON.stringify({ name: name.current.value, surname: surname.current.value, patronymic: patronymic.current.value, birth: birth.current.value, event: eventName.current.innerText, phone: phone.current.value, email: email.current.value }),
-      })
-      const data = await response
-      console.log(data);
+    console.log(surname.current.value);
+    if (surnameInput && nameInput && patronymicInput && genderInput && birthInput && bornInput && phoneInput && emailInput) {
+      if (surname.current.value.length > 0 && name.current.value.length > 0 && gender.current.value.length > 0 && birth.current.value.length > 0 && born.current.value.length > 0 && phone.current.value.length > 0 && email.current.value.length > 0) {
+        const response = fetch('http://localhost:5000/event/add_visitor', {
+          method: 'POST',
+          credentials: 'include',
+          headers: {
+            'Content-type': 'application/json'
+          },
+          body: JSON.stringify({ name: name.current.value, surname: surname.current.value, patronymic: patronymic.current.value, birth: birth.current.value, event: eventName.current.innerText, phone: phone.current.value, email: email.current.value }),
+        })
+        const data = await response
+        console.log(data);
+      }
     }
-  
+  }
+
 
   return (
     <form className={styles.form_block} onSubmit={handlerSubmit}>
-        <svg className={styles.form_block_passport} width="1490" height="1031" viewBox="0 0 1490 1031" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg className={styles.form_block_passport} width="1490" height="1031" viewBox="0 0 1490 1031" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="1" y="1" width="1487.06" height="1028.15" rx="19.0418" fill="white" stroke="#FF0000" stroke-width="2" />
         <rect x="73.0527" y="180.041" width="406.291" height="543.138" fill="white" stroke="#FF0000" stroke-width="2" />
         <line x1="701.836" y1="199.007" x2="1299.6" y2="199.007" stroke="#FF0101" stroke-width="2" />
