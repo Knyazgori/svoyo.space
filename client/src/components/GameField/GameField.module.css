@@ -2,8 +2,8 @@
   position: absolute;
   height: 1200px;
   width: 1500px;
-  right: 0px;
-  top: 0px;
+  right: 5px;
+  top: 5px;
   /* border: 1px solid red; */
   clip-path: polygon(0px 313px, -397px 308px, -394px 94px, -4px 90px, 0px 0px, 1502px 0px, 1502px 1202px, 0px 1202px);
   overflow-x: hidden;
@@ -100,11 +100,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  left: 25.76px;
-  left: -50px;
   z-index: 22;
   clip-path: polygon(0px 313px, -397px 308px, -394px 94px, -4px 90px, 0px 0px, 1502px 0px, 1502px 1202px, 0px 1202px);
-
   top: 30px;
   z-index: 22;
 }
