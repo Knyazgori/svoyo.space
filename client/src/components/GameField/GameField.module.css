@@ -100,4 +100,5 @@
   left: 25.76px;
   left: -50px;
   z-index: 22;
+  clip-path: polygon(0px 313px, -397px 308px, -394px 94px, -4px 90px, 0px 0px, 1502px 0px, 1502px 1202px, 0px 1202px);
 }

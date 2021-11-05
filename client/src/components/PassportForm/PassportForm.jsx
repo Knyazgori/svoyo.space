@@ -5,35 +5,35 @@ import styles from './PassportForm.module.css'
 function PassportForm(props) {
   // surname state
   const [surnameInput, setSurname] = useState(true)
-  const [surnameVal, setValSurname] = useState('Пушкин')
+  const [surnameVal, setValSurname] = useState('')
 
   // name state
   const [nameInput, setName] = useState(true)
-  const [nameVal, setValName] = useState('Александр')
+  const [nameVal, setValName] = useState('')
 
   // patronymic state
   const [patronymicInput, setPatronymic] = useState(true)
-  const [patronymicVal, setValPatronymic] = useState('Сергеевич')
+  const [patronymicVal, setValPatronymic] = useState('')
   
   // gender state
   const [genderInput, setGender] = useState(true)
-  const [genderVal, setValGender] = useState('men')
+  const [genderVal, setValGender] = useState('')
 
   // birth state
   const [birthInput, setBirth] = useState(true)
-  const [birthVal, setValBirth] = useState(1800)
+  const [birthVal, setValBirth] = useState()
   
   // born state
   const [bornInput, setBorn] = useState(true)
-  const [bornVal, setValBorn] = useState('Leningrad')
+  const [bornVal, setValBorn] = useState('')
 
   // phone state
   const [phoneInput, setPhone] = useState(true)
-  const [phoneVal, setValPhone] = useState(89003332)
+  const [phoneVal, setValPhone] = useState('')
 
   // email state
   const [emailInput, setEmail] = useState(true)
-  const [emailVal, setValEmail] = useState('pushkin@poet')
+  const [emailVal, setValEmail] = useState('')
   
 
   const eventName = useRef()
@@ -63,44 +63,62 @@ function PassportForm(props) {
   useEffect(() => {
     
     // surname
-    if (surnameVal.search(/^[а-яА-ЯёЁ0-9\s]+$/) === -1) {
+    if (surnameVal.search(/^[а-яА-ЯёЁ0-9\s]*$/) === -1) {
       setSurname((prevSurname) => prevSurname = false)  
     } else {
       setSurname((prevSurname) => prevSurname = true)
     }
 
     // name
-    if (nameVal.search(/^[а-яА-ЯёЁ0-9\s]+$/) === -1) {
+    if (nameVal.search(/^[а-яА-ЯёЁ0-9\s]*$/) === -1) {
       setName((prevName) => prevName = false)
     } else {
       setName((prevName) => prevName = true)
     }
     
     // patronymic
-    if (patronymicVal.search(/^[а-яА-ЯёЁ0-9\s]+$/) === -1) {
+    if (patronymicVal.search(/^[а-яА-ЯёЁ0-9\s]*$/) === -1) {
       setPatronymic((prevPatronymic) => prevPatronymic = false)
     } else {
       setPatronymic((prevPatronymic) => prevPatronymic = true)
     }
 
-    if (genderVal.search(/[А-яЁё]/) === -1) {
+    // gender
+    if (genderVal.search(/^[а-яА-ЯёЁ0-9\s]*$/) === -1) {
       setGender((prevGender) => prevGender = false)
     } else {
-      setGender((prevGender) => prevGender = false)
+      setGender((prevGender) => prevGender = true)
     }
     
-    // } else if (birth.current.value.search(/^[\d.,-]*$/) === -1 ) {
+    // // birth
+    // if (birthVal.search(/^[0-9]*$/) === -1 ) {
     //   setBirth((prevBirth) => prevBirth = false)
-    // } else if (born.current.value.search(/[А-яЁё]/) === -1) {
-    //   setBorn((prevBorn) => prevBorn = false)
-    // } else if (phone.current.value.search(/^[\d.,-]*$/) === -1 ) {
-    //   setPhone((prevPhone) => prevPhone = false)
-    // } else if (email.current.value.search(/[А-яЁё]/) === -1) {
-    //   setEmail((prevEmail) => prevEmail = false)
     // } else {
-    //   setSurname((prevSurname) => prevSurname = true)
+    //   setBirth((prevBirth) => prevBirth = true)      
     // }
-  }, [surnameInput, surnameVal, nameVal, nameInput, patronymicVal, patronymicInput, genderInput, birthInput, bornInput, phoneInput, emailInput])
+
+    // born
+    if (bornVal.search(/^[а-яА-ЯёЁ0-9\s]*$/) === -1) {
+      setBorn((prevBorn) => prevBorn = false)
+    } else {
+      setBorn((prevBorn) => prevBorn = true)
+    }
+
+    // phone
+    if (phoneVal.search(/^[0-9]*$/) === -1 ) {
+      setPhone((prevPhone) => prevPhone = false)
+    } else {
+      setPhone((prevPhone) => prevPhone = true)
+    }
+
+    // email
+    if (emailVal.search(/^[a-zA-Z0-9@.,\s]*$/) === -1) {
+      setEmail((prevEmail) => prevEmail = false)
+    } else {
+      setEmail((prevSurname) => prevSurname = true)
+    }
+
+  }, [surnameInput, surnameVal, nameVal, nameInput, patronymicVal, patronymicInput, genderVal, genderInput, birthVal, birthInput, bornVal, bornInput, phoneVal, phoneInput, emailVal, emailInput])
 
   const handlerSubmit = async (event) => {
     event.preventDefault();

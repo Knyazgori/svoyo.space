@@ -17,13 +17,14 @@ import Letter from '../Letter/Letter';
 import Passport from '../Passport/Passport';
 import AR from '../AR/AR';
 import InputRules from '../InputRules/InputRules';
+import Slider from '../LetterForm/Slider';
 
 
 function App() {
 
   const dispatch = useDispatch()
   const admin = useSelector(state => state.isUserAuth)
-  
+
   useEffect(() => {
     fetch('http://localhost:5000/isauth', {
       method: 'POST',
@@ -55,6 +56,9 @@ function App() {
         <Route exact path='/russia'>
           <Letter />
         </Route>
+        <Route exact path='/slider'>
+          <Slider />
+        </Route>
         <Route exact path='/passport'>
           <Passport />
         </Route>
@@ -66,20 +70,20 @@ function App() {
         </Route>
         <Route exact path="/login">
           <Login />
-        </Route> 
+        </Route>
         <Route exact path="/logout">
           <Logout />
         </Route>
         <Route exact path="/telegram" component={() => {
-          window.location.href = 'https://t.me/make_russia_great_again'; 
+          window.location.href = 'https://t.me/make_russia_great_again';
           return null;
         }} />
         <Route exact path="/you_tube" component={() => {
-          window.location.href = 'https://www.youtube.com/'; 
+          window.location.href = 'https://www.youtube.com/';
           return null;
         }} />
         <Route exact path="/instagram" component={() => {
-          window.location.href = 'https://www.instagram.com/svoyo.space/'; 
+          window.location.href = 'https://www.instagram.com/svoyo.space/';
           return null;
         }} />
       </Switch>
