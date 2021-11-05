@@ -7,10 +7,8 @@ import './FirstRow.css'
 
 function FirstRow(props) {
 
-  console.log('Тестовый лог перфект тетрис 1.7');
   return (
     <div
-      // className={style.wrapper}
       id='wrapper'
       style={{
         display: "flex",

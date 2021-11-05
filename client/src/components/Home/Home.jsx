@@ -5,22 +5,22 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Environment, Stars } from "@react-three/drei"
 
 
-const Scene = () => {
-  const fbx = useLoader(FBXLoader, "./AR/russia.fbx");
+// const Scene = () => {
+//   const fbx = useLoader(FBXLoader, "./AR/russia.fbx");
 
-  return <primitive object={fbx} scale={0.005} />;
-};
+//   return <primitive object={fbx} scale={0.005} />;
+// };
 
 function Home(props) {
 
   return (
     <>
       <Canvas>
-        <Suspense fallback={null}>
+        {/* <Suspense fallback={null}>
           <Scene />
           <OrbitControls />
           <Environment preset="sunset" background />
-        </Suspense>
+        </Suspense> */}
       </Canvas>
     </>
 
