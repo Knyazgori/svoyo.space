@@ -1,6 +1,6 @@
 import React from 'react';
 
-import AR3D2 from '../AR3D2/AR3D2.jsx';
+import AR3D from '../AR3D/AR3D.jsx';
 import ARGallery from '../ARGallery/ARGallery';
 import ARHeader from '../ARHeader/ARHeader';
 import Footer from '../Footer/Footer';
@@ -14,7 +14,7 @@ function AR(props) {
         <div className={styles.wrapper}>
           <div className={styles.content}>
             <ARHeader />
-            <AR3D2 /> 
+            <AR3D /> 
             <ARGallery />
           </div>
           <Footer />

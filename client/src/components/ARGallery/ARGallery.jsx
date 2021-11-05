@@ -12,7 +12,7 @@ function ARGallery(props) {
 
       {/* <div className={styles.gallery}> */}
 
-          <div className={styles.video_1}><iframe width="311" height="553" src="https://youtu.be/ucd713iwUkc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
+          <div className={styles.video_1}><iframe width="311" height="533" src="https://www.youtube.com/embed/adV0-jQQOro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
           <div className={styles.video_2}><iframe width="311" height="553" src="https://youtu.be/qjJeHeiBhm4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
           <div className={styles.video_3}><iframe width="311" height="553" src="https://youtu.be/sPjbOZvF--k" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
           <div className={styles.video_qr_1}><img style={{  width: '120px', height: '120px' }} src="../../../QRtoPNG/1_1.png" alt="" /></div>
