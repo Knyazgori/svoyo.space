@@ -134,7 +134,7 @@ function PassportForm(props) {
           body: JSON.stringify({ name: name.current.value, surname: surname.current.value, patronymic: patronymic.current.value, birth: birth.current.value, event: eventName.current.innerText, phone: phone.current.value, email: email.current.value }),
         })
         const data = await response
-        console.log(data);
+        setTimeout(() => window.location.href = '/', 1500);
       }
     }
   }
