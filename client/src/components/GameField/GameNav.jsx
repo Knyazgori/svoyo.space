@@ -15,6 +15,7 @@ function GameNav({ moveRight, moveLeft, rotateRightHandler, rotateLeftHandler, h
       <Left moveLeft={moveLeft} rotateLeftHandler={rotateLeftHandler} />
       <Down rotateRightHandler={rotateRightHandler}/>
       <Right moveRight={moveRight} />
+      
     </div>
   );
 }
