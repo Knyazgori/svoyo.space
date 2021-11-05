@@ -45,8 +45,8 @@ function LetterForm(props) {
       left: 0,
       behavior: 'smooth'
     });
-
-    const response = fetch('http://localhost:5000/words', {
+    
+    const response = await fetch('http://localhost:5000/words', {
       method: 'POST',
       credentials: 'include',
       headers: {
@@ -57,6 +57,14 @@ function LetterForm(props) {
     const data = await response
     console.log(data.ok);
 
+    user.current.value = '';
+    nickname.current.value = '';
+    city.current.value = '';
+    country.current.value = '';
+
+    first.current.value = '';
+    second.current.value = '';
+    third.current.value = '';
     // setTimeout(() => window.location.href = '/', 1500);
 
   }
